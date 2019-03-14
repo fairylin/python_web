@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "username": "root",
+    "password": "root",
+    "note": "i'am the first note!!"
+  },
+  {
+    "id": 2,
+    "username": "admin",
+    "password": "admin",
+    "note": "admin"
+  },
+  {
+    "id": 3,
+    "username": "nihao",
+    "password": "nihao",
+    "note": "123"
+  },
+  {
+    "id": 4,
+    "username": "gua",
+    "password": "123",
+    "note": "note"
+  }
+]

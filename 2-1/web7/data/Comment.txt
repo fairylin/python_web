@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "content": "楼主说得对",
+    "user_id": 2,
+    "weibo_id": -1
+  },
+  {
+    "id": 2,
+    "content": "good",
+    "user_id": 1,
+    "weibo_id": 1
+  },
+  {
+    "id": 3,
+    "content": "you+are+a+good+girl!!",
+    "user_id": 1,
+    "weibo_id": 1
+  },
+  {
+    "id": 4,
+    "content": "i+love+you!",
+    "user_id": 1,
+    "weibo_id": 1
+  },
+  {
+    "id": 5,
+    "content": "nihao",
+    "user_id": 1,
+    "weibo_id": 1
+  },
+  {
+    "id": 6,
+    "content": "bingo",
+    "user_id": 1,
+    "weibo_id": 2
+  }
+]

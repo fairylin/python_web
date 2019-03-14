@@ -1,0 +1,551 @@
+2019/02/24 09:18:53 ip and request, ('127.0.0.1', 65524)
+<__main__.Request object at 0x000001F7B9E380B8>
+2019/02/24 09:18:53 完整请求
+2019/02/24 09:18:53 GET / HTTP/1.1
+Host: 127.0.0.1:3000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: user=OrTRqrpzjPg59x91
+
+
+2019/02/24 09:18:53 请求结束
+2019/02/24 09:18:53 cookie ['user=OrTRqrpzjPg59x91']
+2019/02/24 09:18:53 request content GET 
+ {'Host': '127.0.0.1:3000', 'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8', 'Accept-Encoding': 'gzip, deflate, br', 'Accept-Language': 'zh-CN,zh;q=0.9', 'Cookie': 'user=OrTRqrpzjPg59x91', 'Referer': 'http://127.0.0.1:3000/'} 
+ {'user': 'OrTRqrpzjPg59x91'} 
+  
+
+2019/02/24 09:18:53 path and query / {}
+2019/02/24 09:18:53 完整响应
+2019/02/24 09:18:53 HTTP/1.1 200 VERY OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>吃瓜主页</title>
+</head>
+<body>
+    <h1>吃瓜</h1>
+    <a href="/login">Login</a>
+    <img src="/static?file=doge.gif"/>
+    <img src="/static?file=doge1.jpg"/>
+    <img src="/static?file=doge2.gif"/>
+</body>
+</html>
+2019/02/24 09:18:53 响应结束
+2019/02/24 09:18:53 ip and request, ('127.0.0.1', 65525)
+<__main__.Request object at 0x000001F7B9E380B8>
+2019/02/24 09:18:53 完整请求
+2019/02/24 09:18:53 GET /static?file=doge.gif HTTP/1.1
+Host: 127.0.0.1:3000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:3000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: user=OrTRqrpzjPg59x91
+
+
+2019/02/24 09:18:53 请求结束
+2019/02/24 09:18:53 cookie ['user=OrTRqrpzjPg59x91']
+2019/02/24 09:18:53 request content GET 
+ {'Host': '127.0.0.1:3000', 'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36', 'Accept': 'image/webp,image/apng,image/*,*/*;q=0.8', 'Accept-Encoding': 'gzip, deflate, br', 'Accept-Language': 'zh-CN,zh;q=0.9', 'Cookie': 'user=OrTRqrpzjPg59x91', 'Referer': 'http://127.0.0.1:3000/'} 
+ {'user': 'OrTRqrpzjPg59x91'} 
+  
+
+2019/02/24 09:18:53 path and query /static {'file': 'doge.gif'}
+2019/02/24 09:18:53 完整响应
+2019/02/24 09:18:53 异常 'utf-8' codec can't decode byte 0xf6 in position 54: invalid start byte
+2019/02/24 09:18:53 响应结束
+2019/02/24 09:18:53 ip and request, ('127.0.0.1', 65526)
+<__main__.Request object at 0x000001F7B9E380B8>
+2019/02/24 09:18:53 完整请求
+2019/02/24 09:18:53 GET /static?file=doge1.jpg HTTP/1.1
+Host: 127.0.0.1:3000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:3000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: user=OrTRqrpzjPg59x91
+
+
+2019/02/24 09:18:53 请求结束
+2019/02/24 09:18:53 cookie ['user=OrTRqrpzjPg59x91']
+2019/02/24 09:18:53 request content GET 
+ {'Host': '127.0.0.1:3000', 'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36', 'Accept': 'image/webp,image/apng,image/*,*/*;q=0.8', 'Accept-Encoding': 'gzip, deflate, br', 'Accept-Language': 'zh-CN,zh;q=0.9', 'Cookie': 'user=OrTRqrpzjPg59x91', 'Referer': 'http://127.0.0.1:3000/'} 
+ {'user': 'OrTRqrpzjPg59x91'} 
+  
+
+2019/02/24 09:18:53 path and query /static {'file': 'doge1.jpg'}
+2019/02/24 09:18:54 完整响应
+2019/02/24 09:18:54 异常 'utf-8' codec can't decode byte 0xf5 in position 54: invalid start byte
+2019/02/24 09:18:54 响应结束
+2019/02/24 09:18:54 ip and request, ('127.0.0.1', 65527)
+<__main__.Request object at 0x000001F7B9E380B8>
+2019/02/24 09:18:54 完整请求
+2019/02/24 09:18:54 GET /static?file=doge2.gif HTTP/1.1
+Host: 127.0.0.1:3000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:3000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: user=OrTRqrpzjPg59x91
+
+
+2019/02/24 09:18:54 请求结束
+2019/02/24 09:18:54 cookie ['user=OrTRqrpzjPg59x91']
+2019/02/24 09:18:54 request content GET 
+ {'Host': '127.0.0.1:3000', 'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36', 'Accept': 'image/webp,image/apng,image/*,*/*;q=0.8', 'Accept-Encoding': 'gzip, deflate, br', 'Accept-Language': 'zh-CN,zh;q=0.9', 'Cookie': 'user=OrTRqrpzjPg59x91', 'Referer': 'http://127.0.0.1:3000/'} 
+ {'user': 'OrTRqrpzjPg59x91'} 
+  
+
+2019/02/24 09:18:54 path and query /static {'file': 'doge2.gif'}
+2019/02/24 09:18:54 完整响应
+2019/02/24 09:18:54 异常 'utf-8' codec can't decode byte 0xf6 in position 54: invalid start byte
+2019/02/24 09:18:54 响应结束
+2019/02/24 09:19:19 start at :3000
+2019/02/24 09:19:21 完整请求
+2019/02/24 09:19:21 GET / HTTP/1.1
+Host: 127.0.0.1:3000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: user=OrTRqrpzjPg59x91
+
+
+2019/02/24 09:19:21 请求结束
+2019/02/24 09:19:21 cookie ['user=OrTRqrpzjPg59x91']
+2019/02/24 09:19:21 request content GET 
+ {'Host': '127.0.0.1:3000', 'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8', 'Accept-Encoding': 'gzip, deflate, br', 'Accept-Language': 'zh-CN,zh;q=0.9', 'Cookie': 'user=OrTRqrpzjPg59x91'} 
+ {'user': 'OrTRqrpzjPg59x91'} 
+  
+
+2019/02/24 09:19:21 path and query / {}
+2019/02/24 09:19:21 完整响应
+2019/02/24 09:19:21 HTTP/1.1 200 VERY OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>吃瓜主页</title>
+</head>
+<body>
+    <h1>吃瓜</h1>
+    <a href="/login">Login</a>
+    <img src="/static?file=doge.gif"/>
+    <img src="/static?file=doge1.jpg"/>
+    <img src="/static?file=doge2.gif"/>
+</body>
+</html>
+2019/02/24 09:19:21 响应结束
+2019/02/24 09:19:21 完整请求
+2019/02/24 09:19:21 GET /static?file=doge.gif HTTP/1.1
+Host: 127.0.0.1:3000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:3000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: user=OrTRqrpzjPg59x91
+
+
+2019/02/24 09:19:21 请求结束
+2019/02/24 09:19:21 cookie ['user=OrTRqrpzjPg59x91']
+2019/02/24 09:19:21 request content GET 
+ {'Host': '127.0.0.1:3000', 'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36', 'Accept': 'image/webp,image/apng,image/*,*/*;q=0.8', 'Accept-Encoding': 'gzip, deflate, br', 'Accept-Language': 'zh-CN,zh;q=0.9', 'Cookie': 'user=OrTRqrpzjPg59x91', 'Referer': 'http://127.0.0.1:3000/'} 
+ {'user': 'OrTRqrpzjPg59x91'} 
+  
+
+2019/02/24 09:19:21 path and query /static {'file': 'doge.gif'}
+2019/02/24 09:19:21 完整响应
+2019/02/24 09:19:21 异常 'utf-8' codec can't decode byte 0xf6 in position 54: invalid start byte
+2019/02/24 09:19:21 响应结束
+2019/02/24 09:19:21 完整请求
+2019/02/24 09:19:21 GET /static?file=doge1.jpg HTTP/1.1
+Host: 127.0.0.1:3000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:3000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: user=OrTRqrpzjPg59x91
+
+
+2019/02/24 09:19:21 请求结束
+2019/02/24 09:19:21 cookie ['user=OrTRqrpzjPg59x91']
+2019/02/24 09:19:21 request content GET 
+ {'Host': '127.0.0.1:3000', 'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36', 'Accept': 'image/webp,image/apng,image/*,*/*;q=0.8', 'Accept-Encoding': 'gzip, deflate, br', 'Accept-Language': 'zh-CN,zh;q=0.9', 'Cookie': 'user=OrTRqrpzjPg59x91', 'Referer': 'http://127.0.0.1:3000/'} 
+ {'user': 'OrTRqrpzjPg59x91'} 
+  
+
+2019/02/24 09:19:21 path and query /static {'file': 'doge1.jpg'}
+2019/02/24 09:19:21 完整响应
+2019/02/24 09:19:21 异常 'utf-8' codec can't decode byte 0xf5 in position 54: invalid start byte
+2019/02/24 09:19:21 响应结束
+2019/02/24 09:19:21 完整请求
+2019/02/24 09:19:21 GET /static?file=doge2.gif HTTP/1.1
+Host: 127.0.0.1:3000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:3000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: user=OrTRqrpzjPg59x91
+
+
+2019/02/24 09:19:21 请求结束
+2019/02/24 09:19:21 cookie ['user=OrTRqrpzjPg59x91']
+2019/02/24 09:19:21 request content GET 
+ {'Host': '127.0.0.1:3000', 'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36', 'Accept': 'image/webp,image/apng,image/*,*/*;q=0.8', 'Accept-Encoding': 'gzip, deflate, br', 'Accept-Language': 'zh-CN,zh;q=0.9', 'Cookie': 'user=OrTRqrpzjPg59x91', 'Referer': 'http://127.0.0.1:3000/'} 
+ {'user': 'OrTRqrpzjPg59x91'} 
+  
+
+2019/02/24 09:19:21 path and query /static {'file': 'doge2.gif'}
+2019/02/24 09:19:21 完整响应
+2019/02/24 09:19:21 异常 'utf-8' codec can't decode byte 0xf6 in position 54: invalid start byte
+2019/02/24 09:19:21 响应结束
+2019/02/24 09:19:26 完整请求
+2019/02/24 09:19:26 GET /todo HTTP/1.1
+Host: 127.0.0.1:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: user=OrTRqrpzjPg59x91
+
+
+2019/02/24 09:19:26 请求结束
+2019/02/24 09:19:26 cookie ['user=OrTRqrpzjPg59x91']
+2019/02/24 09:19:26 request content GET 
+ {'Host': '127.0.0.1:3000', 'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8', 'Accept-Encoding': 'gzip, deflate, br', 'Accept-Language': 'zh-CN,zh;q=0.9', 'Cookie': 'user=OrTRqrpzjPg59x91', 'Referer': 'http://127.0.0.1:3000/'} 
+ {'user': 'OrTRqrpzjPg59x91'} 
+  
+
+2019/02/24 09:19:26 path and query /todo {}
+2019/02/24 09:19:26 完整响应
+2019/02/24 09:19:26 HTTP/1.1 302 VERY OK
+Location: /login
+
+2019/02/24 09:19:26 响应结束
+2019/02/24 09:19:26 完整请求
+2019/02/24 09:19:26 GET /login HTTP/1.1
+Host: 127.0.0.1:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: user=OrTRqrpzjPg59x91
+
+
+2019/02/24 09:19:26 请求结束
+2019/02/24 09:19:26 cookie ['user=OrTRqrpzjPg59x91']
+2019/02/24 09:19:26 request content GET 
+ {'Host': '127.0.0.1:3000', 'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8', 'Accept-Encoding': 'gzip, deflate, br', 'Accept-Language': 'zh-CN,zh;q=0.9', 'Cookie': 'user=OrTRqrpzjPg59x91', 'Referer': 'http://127.0.0.1:3000/'} 
+ {'user': 'OrTRqrpzjPg59x91'} 
+  
+
+2019/02/24 09:19:26 path and query /login {}
+2019/02/24 09:19:26 login, cookies {'user': 'OrTRqrpzjPg59x91'} 【游客】
+2019/02/24 09:19:26 完整响应
+2019/02/24 09:19:26 HTTP/1.1 200 VERY OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册登录页面</title>
+</head>
+<body>
+    <h1>登录</h1>
+    <h2>你好 【游客】</h2>
+    <form action="/login" method="post">
+        <input type="text" name="username" placeholder="请输入用户名">
+        <br>
+        <input type="text" name="password" placeholder="请输入密码">
+        <br>
+        <button type="submit">登录</button>
+    </form>
+    <h3></h3>
+</body>
+</html>
+2019/02/24 09:19:26 响应结束
+2019/02/24 09:19:30 完整请求
+2019/02/24 09:19:30 GET /todo HTTP/1.1
+Host: 127.0.0.1:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: user=OrTRqrpzjPg59x91
+
+
+2019/02/24 09:19:30 请求结束
+2019/02/24 09:19:30 cookie ['user=OrTRqrpzjPg59x91']
+2019/02/24 09:19:30 request content GET 
+ {'Host': '127.0.0.1:3000', 'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8', 'Accept-Encoding': 'gzip, deflate, br', 'Accept-Language': 'zh-CN,zh;q=0.9', 'Cookie': 'user=OrTRqrpzjPg59x91', 'Referer': 'http://127.0.0.1:3000/'} 
+ {'user': 'OrTRqrpzjPg59x91'} 
+  
+
+2019/02/24 09:19:30 path and query /todo {}
+2019/02/24 09:19:30 完整响应
+2019/02/24 09:19:30 HTTP/1.1 302 VERY OK
+Location: /login
+
+2019/02/24 09:19:30 响应结束
+2019/02/24 09:19:31 完整请求
+2019/02/24 09:19:31 GET /login HTTP/1.1
+Host: 127.0.0.1:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: user=OrTRqrpzjPg59x91
+
+
+2019/02/24 09:19:31 请求结束
+2019/02/24 09:19:31 cookie ['user=OrTRqrpzjPg59x91']
+2019/02/24 09:19:31 request content GET 
+ {'Host': '127.0.0.1:3000', 'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8', 'Accept-Encoding': 'gzip, deflate, br', 'Accept-Language': 'zh-CN,zh;q=0.9', 'Cookie': 'user=OrTRqrpzjPg59x91', 'Referer': 'http://127.0.0.1:3000/'} 
+ {'user': 'OrTRqrpzjPg59x91'} 
+  
+
+2019/02/24 09:19:31 path and query /login {}
+2019/02/24 09:19:31 login, cookies {'user': 'OrTRqrpzjPg59x91'} 【游客】
+2019/02/24 09:19:31 完整响应
+2019/02/24 09:19:31 HTTP/1.1 200 VERY OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册登录页面</title>
+</head>
+<body>
+    <h1>登录</h1>
+    <h2>你好 【游客】</h2>
+    <form action="/login" method="post">
+        <input type="text" name="username" placeholder="请输入用户名">
+        <br>
+        <input type="text" name="password" placeholder="请输入密码">
+        <br>
+        <button type="submit">登录</button>
+    </form>
+    <h3></h3>
+</body>
+</html>
+2019/02/24 09:19:31 响应结束
+2019/02/24 09:19:34 完整请求
+2019/02/24 09:19:34 POST /login HTTP/1.1
+Host: 127.0.0.1:3000
+Connection: keep-alive
+Content-Length: 27
+Cache-Control: max-age=0
+Origin: http://127.0.0.1:3000
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://127.0.0.1:3000/login
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: user=OrTRqrpzjPg59x91
+
+username=root&password=root
+2019/02/24 09:19:34 请求结束
+2019/02/24 09:19:34 cookie ['user=OrTRqrpzjPg59x91']
+2019/02/24 09:19:34 request content POST 
+ {'Host': '127.0.0.1:3000', 'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8', 'Accept-Encoding': 'gzip, deflate, br', 'Accept-Language': 'zh-CN,zh;q=0.9', 'Cookie': 'user=OrTRqrpzjPg59x91', 'Referer': 'http://127.0.0.1:3000/login', 'Content-Length': '27', 'Origin': 'http://127.0.0.1:3000', 'Content-Type': 'application/x-www-form-urlencoded'} 
+ {'user': 'OrTRqrpzjPg59x91'} 
+ username=root&password=root 
+
+2019/02/24 09:19:34 path and query /login {}
+2019/02/24 09:19:34 login, cookies {'user': 'OrTRqrpzjPg59x91'} 【游客】
+2019/02/24 09:19:34 form self.form username=root&password=root
+2019/02/24 09:19:34 完整响应
+2019/02/24 09:19:34 HTTP/1.1 200 VERY OK
+Content-Type: text/html
+Set-Cookie: user=uYepOlxJ2eXULAmz
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册登录页面</title>
+</head>
+<body>
+    <h1>登录</h1>
+    <h2>你好 【游客】</h2>
+    <form action="/login" method="post">
+        <input type="text" name="username" placeholder="请输入用户名">
+        <br>
+        <input type="text" name="password" placeholder="请输入密码">
+        <br>
+        <button type="submit">登录</button>
+    </form>
+    <h3>登录成功</h3>
+</body>
+</html>
+2019/02/24 09:19:34 响应结束
+2019/02/24 09:19:37 完整请求
+2019/02/24 09:19:37 GET /todo HTTP/1.1
+Host: 127.0.0.1:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: user=uYepOlxJ2eXULAmz
+
+
+2019/02/24 09:19:37 请求结束
+2019/02/24 09:19:37 cookie ['user=uYepOlxJ2eXULAmz']
+2019/02/24 09:19:37 request content GET 
+ {'Host': '127.0.0.1:3000', 'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8', 'Accept-Encoding': 'gzip, deflate, br', 'Accept-Language': 'zh-CN,zh;q=0.9', 'Cookie': 'user=uYepOlxJ2eXULAmz', 'Referer': 'http://127.0.0.1:3000/login', 'Content-Length': '27', 'Origin': 'http://127.0.0.1:3000', 'Content-Type': 'application/x-www-form-urlencoded'} 
+ {'user': 'uYepOlxJ2eXULAmz'} 
+  
+
+2019/02/24 09:19:37 path and query /todo {}
+2019/02/24 09:19:37 完整响应
+2019/02/24 09:19:37 HTTP/1.1 200 VERY OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TODO 程序</title>
+</head>
+<body>
+    <h1>TODO</h1>
+    <form action="/todo/add" method="post">
+        <input type="text" name="title" placeholder="请输入todo">
+        <br>
+        <button type="submit">添加</button>
+    </form>
+    <div><h3>2 : root <a href="/todo/edit?id=2">编辑</a> <a href="/todo/delete?id=2">删除</a></h3><h5>创建时间: 02-22 13:34	 <br />更新时间: 02-22 13:34	</h5><h3>3 : good <a href="/todo/edit?id=3">编辑</a> <a href="/todo/delete?id=3">删除</a></h3><h5>创建时间: 02-22 13:34	 <br />更新时间: 02-22 13:34	</h5></div>
+</body>
+</html>
+
+2019/02/24 09:19:37 响应结束
+2019/02/24 09:19:42 完整请求
+2019/02/24 09:19:42 POST /todo/add HTTP/1.1
+Host: 127.0.0.1:3000
+Connection: keep-alive
+Content-Length: 9
+Cache-Control: max-age=0
+Origin: http://127.0.0.1:3000
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://127.0.0.1:3000/todo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: user=uYepOlxJ2eXULAmz
+
+title=123
+2019/02/24 09:19:42 请求结束
+2019/02/24 09:19:42 cookie ['user=uYepOlxJ2eXULAmz']
+2019/02/24 09:19:42 request content POST 
+ {'Host': '127.0.0.1:3000', 'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8', 'Accept-Encoding': 'gzip, deflate, br', 'Accept-Language': 'zh-CN,zh;q=0.9', 'Cookie': 'user=uYepOlxJ2eXULAmz', 'Referer': 'http://127.0.0.1:3000/todo', 'Content-Length': '9', 'Origin': 'http://127.0.0.1:3000', 'Content-Type': 'application/x-www-form-urlencoded'} 
+ {'user': 'uYepOlxJ2eXULAmz'} 
+ title=123 
+
+2019/02/24 09:19:42 path and query /todo/add {}
+2019/02/24 09:19:42 form self.form title=123
+2019/02/24 09:19:42 debug save < Todo
+id: (None)
+title: (123)
+user_id: (1)
+create_time: (02-24 09:19)
+update_time: (02-24 09:19) >
+
+2019/02/24 09:19:42 用log可以查看代码执行的走向
+2019/02/24 09:19:42 self  < Todo
+id: (4)
+title: (123)
+user_id: (1)
+create_time: (02-24 09:19)
+update_time: (02-24 09:19) >
+
+2019/02/24 09:19:42 完整响应
+2019/02/24 09:19:42 HTTP/1.1 302 VERY OK
+Location: /todo
+
+2019/02/24 09:19:42 响应结束
+2019/02/24 09:19:42 完整请求
+2019/02/24 09:19:42 GET /todo HTTP/1.1
+Host: 127.0.0.1:3000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://127.0.0.1:3000/todo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: user=uYepOlxJ2eXULAmz
+
+
+2019/02/24 09:19:42 请求结束
+2019/02/24 09:19:42 cookie ['user=uYepOlxJ2eXULAmz']
+2019/02/24 09:19:42 request content GET 
+ {'Host': '127.0.0.1:3000', 'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8', 'Accept-Encoding': 'gzip, deflate, br', 'Accept-Language': 'zh-CN,zh;q=0.9', 'Cookie': 'user=uYepOlxJ2eXULAmz', 'Referer': 'http://127.0.0.1:3000/todo', 'Content-Length': '9', 'Origin': 'http://127.0.0.1:3000', 'Content-Type': 'application/x-www-form-urlencoded'} 
+ {'user': 'uYepOlxJ2eXULAmz'} 
+  
+
+2019/02/24 09:19:42 path and query /todo {}
+2019/02/24 09:19:42 完整响应
+2019/02/24 09:19:42 HTTP/1.1 200 VERY OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TODO 程序</title>
+</head>
+<body>
+    <h1>TODO</h1>
+    <form action="/todo/add" method="post">
+        <input type="text" name="title" placeholder="请输入todo">
+        <br>
+        <button type="submit">添加</button>
+    </form>
+    <div><h3>2 : root <a href="/todo/edit?id=2">编辑</a> <a href="/todo/delete?id=2">删除</a></h3><h5>创建时间: 02-22 13:34	 <br />更新时间: 02-22 13:34	</h5><h3>3 : good <a href="/todo/edit?id=3">编辑</a> <a href="/todo/delete?id=3">删除</a></h3><h5>创建时间: 02-22 13:34	 <br />更新时间: 02-22 13:34	</h5><h3>4 : 123 <a href="/todo/edit?id=4">编辑</a> <a href="/todo/delete?id=4">删除</a></h3><h5>创建时间: 02-24 09:19	 <br />更新时间: 02-24 09:19	</h5></div>
+</body>
+</html>
+
+2019/02/24 09:19:42 响应结束

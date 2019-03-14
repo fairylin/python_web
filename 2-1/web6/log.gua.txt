@@ -1,0 +1,3724 @@
+2019/02/27 19:46:26 start at :3000
+2019/02/27 19:46:28 
+
+完整请求 *******************************************************
+2019/02/27 19:46:28 GET /todo HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+
+2019/02/27 19:46:28 请求结束
+2019/02/27 19:46:28 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:46:28 path and query /todo {}
+2019/02/27 19:46:28 Model all
+2019/02/27 19:46:28 Todo __init__ {'id': 1, 'task': '你好小孩dd', 'completed': False, 'user_id': -1, 'created_time': 1551158680, 'updated_time': None}
+2019/02/27 19:46:28 Todo __init__ {'id': 2, 'task': '嘉怡asdfasdasdda', 'completed': False, 'user_id': -1, 'created_time': 1551158682, 'updated_time': None}
+2019/02/27 19:46:28 Todo __init__ {'id': 3, 'task': '小仙女asdf', 'completed': False, 'user_id': -1, 'created_time': 1551158687, 'updated_time': None}
+2019/02/27 19:46:28 Todo __init__ {'id': 4, 'task': '我是你哥哥asdf', 'completed': False, 'user_id': -1, 'created_time': 1551158695, 'updated_time': None}
+2019/02/27 19:46:28 template simple_todo_index.html {'todos': [< Todo
+id: (1)
+task: (你好小孩dd)
+completed: (False)
+user_id: (-1)
+created_time: (1551158680)
+updated_time: (None) 
+>
+, < Todo
+id: (2)
+task: (嘉怡asdfasdasdda)
+completed: (False)
+user_id: (-1)
+created_time: (1551158682)
+updated_time: (None) 
+>
+, < Todo
+id: (3)
+task: (小仙女asdf)
+completed: (False)
+user_id: (-1)
+created_time: (1551158687)
+updated_time: (None) 
+>
+, < Todo
+id: (4)
+task: (我是你哥哥asdf)
+completed: (False)
+user_id: (-1)
+created_time: (1551158695)
+updated_time: (None) 
+>
+]}
+2019/02/27 19:46:28 http_response None
+2019/02/27 19:46:28 http_response HTTP/1.1 200 OK
+Content-Type: text/html
+
+2019/02/27 19:46:28 HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo</title>
+</head>
+<body>
+    <form action="/todo/add" method="post">
+        <input name="task">
+        <button>add todo</button>
+    </form>
+
+    
+        <div>
+            1 : 你好小孩dd   @ 19:46:28
+            <a href="/todo/edit?id=1">edit</a>
+            <a href="/todo/delete?id=1">删除</a>
+        </div>
+    
+        <div>
+            2 : 嘉怡asdfasdasdda   @ 19:46:28
+            <a href="/todo/edit?id=2">edit</a>
+            <a href="/todo/delete?id=2">删除</a>
+        </div>
+    
+        <div>
+            3 : 小仙女asdf   @ 19:46:28
+            <a href="/todo/edit?id=3">edit</a>
+            <a href="/todo/delete?id=3">删除</a>
+        </div>
+    
+        <div>
+            4 : 我是你哥哥asdf   @ 19:46:28
+            <a href="/todo/edit?id=4">edit</a>
+            <a href="/todo/delete?id=4">删除</a>
+        </div>
+    
+</body>
+</html>
+2019/02/27 19:46:28 响应结束
+2019/02/27 19:46:30 
+
+完整请求 *******************************************************
+2019/02/27 19:46:30 GET /todo/edit?id=1 HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+
+2019/02/27 19:46:30 请求结束
+2019/02/27 19:46:30 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:46:30 path and query /todo/edit {'id': '1'}
+2019/02/27 19:46:30 Model all
+2019/02/27 19:46:30 Todo __init__ {'id': 1, 'task': '你好小孩dd', 'completed': False, 'user_id': -1, 'created_time': 1551158680, 'updated_time': None}
+2019/02/27 19:46:30 Todo __init__ {'id': 2, 'task': '嘉怡asdfasdasdda', 'completed': False, 'user_id': -1, 'created_time': 1551158682, 'updated_time': None}
+2019/02/27 19:46:30 Todo __init__ {'id': 3, 'task': '小仙女asdf', 'completed': False, 'user_id': -1, 'created_time': 1551158687, 'updated_time': None}
+2019/02/27 19:46:30 Todo __init__ {'id': 4, 'task': '我是你哥哥asdf', 'completed': False, 'user_id': -1, 'created_time': 1551158695, 'updated_time': None}
+2019/02/27 19:46:30 debug EDIT < Todo
+id: (1)
+task: (你好小孩dd)
+completed: (False)
+user_id: (-1)
+created_time: (1551158680)
+updated_time: (None) 
+>
+
+2019/02/27 19:46:30 template simple_todo_edit.html {'todo': < Todo
+id: (1)
+task: (你好小孩dd)
+completed: (False)
+user_id: (-1)
+created_time: (1551158680)
+updated_time: (None) 
+>
+}
+2019/02/27 19:46:30 http_response None
+2019/02/27 19:46:30 http_response HTTP/1.1 200 OK
+Content-Type: text/html
+
+2019/02/27 19:46:30 HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo edit</title>
+</head>
+<body>
+    <form action="/todo/update?id=1" method="post">
+        <input name="task" value="你好小孩dd">
+        <button>update todo</button>
+    </form>
+</body>
+</html>
+2019/02/27 19:46:30 响应结束
+2019/02/27 19:46:31 
+
+完整请求 *******************************************************
+2019/02/27 19:46:31 POST /todo/update?id=1 HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo/edit?id=1
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 44
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+task=%E4%BD%A0%E5%A5%BD%E5%B0%8F%E5%AD%A9ddd
+2019/02/27 19:46:31 请求结束
+2019/02/27 19:46:31 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:46:31 path and query /todo/update {'id': '1'}
+2019/02/27 19:46:31 form self.form task=%E4%BD%A0%E5%A5%BD%E5%B0%8F%E5%AD%A9ddd
+2019/02/27 19:46:31 Model all
+2019/02/27 19:46:31 Todo __init__ {'id': 1, 'task': '你好小孩dd', 'completed': False, 'user_id': -1, 'created_time': 1551158680, 'updated_time': None}
+2019/02/27 19:46:31 Todo __init__ {'id': 2, 'task': '嘉怡asdfasdasdda', 'completed': False, 'user_id': -1, 'created_time': 1551158682, 'updated_time': None}
+2019/02/27 19:46:31 Todo __init__ {'id': 3, 'task': '小仙女asdf', 'completed': False, 'user_id': -1, 'created_time': 1551158687, 'updated_time': None}
+2019/02/27 19:46:31 Todo __init__ {'id': 4, 'task': '我是你哥哥asdf', 'completed': False, 'user_id': -1, 'created_time': 1551158695, 'updated_time': None}
+2019/02/27 19:46:31 classmethod update-model < Todo
+id: (1)
+task: (你好小孩dd)
+completed: (False)
+user_id: (-1)
+created_time: (1551158680)
+updated_time: (None) 
+>
+
+2019/02/27 19:46:31 update****** {'task': '你好小孩ddd'}
+2019/02/27 19:46:31 Todo update <class 'models.Todo'>
+2019/02/27 19:46:31 Model all
+2019/02/27 19:46:31 Todo __init__ {'id': 1, 'task': '你好小孩dd', 'completed': False, 'user_id': -1, 'created_time': 1551158680, 'updated_time': None}
+2019/02/27 19:46:31 Todo __init__ {'id': 2, 'task': '嘉怡asdfasdasdda', 'completed': False, 'user_id': -1, 'created_time': 1551158682, 'updated_time': None}
+2019/02/27 19:46:31 Todo __init__ {'id': 3, 'task': '小仙女asdf', 'completed': False, 'user_id': -1, 'created_time': 1551158687, 'updated_time': None}
+2019/02/27 19:46:31 Todo __init__ {'id': 4, 'task': '我是你哥哥asdf', 'completed': False, 'user_id': -1, 'created_time': 1551158695, 'updated_time': None}
+2019/02/27 19:46:31 debug 0
+2019/02/27 19:46:31 HTTP/1.1 302 OK
+Content-Type: text/html
+Location: /todo
+
+
+2019/02/27 19:46:31 响应结束
+2019/02/27 19:46:31 
+
+完整请求 *******************************************************
+2019/02/27 19:46:31 GET /todo HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo/edit?id=1
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+
+2019/02/27 19:46:31 请求结束
+2019/02/27 19:46:31 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:46:31 path and query /todo {}
+2019/02/27 19:46:31 Model all
+2019/02/27 19:46:31 Todo __init__ {'id': 1, 'task': '你好小孩ddd', 'completed': False, 'user_id': -1, 'created_time': 1551158680, 'updated_time': None}
+2019/02/27 19:46:31 Todo __init__ {'id': 2, 'task': '嘉怡asdfasdasdda', 'completed': False, 'user_id': -1, 'created_time': 1551158682, 'updated_time': None}
+2019/02/27 19:46:31 Todo __init__ {'id': 3, 'task': '小仙女asdf', 'completed': False, 'user_id': -1, 'created_time': 1551158687, 'updated_time': None}
+2019/02/27 19:46:31 Todo __init__ {'id': 4, 'task': '我是你哥哥asdf', 'completed': False, 'user_id': -1, 'created_time': 1551158695, 'updated_time': None}
+2019/02/27 19:46:31 template simple_todo_index.html {'todos': [< Todo
+id: (1)
+task: (你好小孩ddd)
+completed: (False)
+user_id: (-1)
+created_time: (1551158680)
+updated_time: (None) 
+>
+, < Todo
+id: (2)
+task: (嘉怡asdfasdasdda)
+completed: (False)
+user_id: (-1)
+created_time: (1551158682)
+updated_time: (None) 
+>
+, < Todo
+id: (3)
+task: (小仙女asdf)
+completed: (False)
+user_id: (-1)
+created_time: (1551158687)
+updated_time: (None) 
+>
+, < Todo
+id: (4)
+task: (我是你哥哥asdf)
+completed: (False)
+user_id: (-1)
+created_time: (1551158695)
+updated_time: (None) 
+>
+]}
+2019/02/27 19:46:31 http_response None
+2019/02/27 19:46:31 http_response HTTP/1.1 200 OK
+Content-Type: text/html
+
+2019/02/27 19:46:31 HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo</title>
+</head>
+<body>
+    <form action="/todo/add" method="post">
+        <input name="task">
+        <button>add todo</button>
+    </form>
+
+    
+        <div>
+            1 : 你好小孩ddd   @ 19:46:31
+            <a href="/todo/edit?id=1">edit</a>
+            <a href="/todo/delete?id=1">删除</a>
+        </div>
+    
+        <div>
+            2 : 嘉怡asdfasdasdda   @ 19:46:31
+            <a href="/todo/edit?id=2">edit</a>
+            <a href="/todo/delete?id=2">删除</a>
+        </div>
+    
+        <div>
+            3 : 小仙女asdf   @ 19:46:31
+            <a href="/todo/edit?id=3">edit</a>
+            <a href="/todo/delete?id=3">删除</a>
+        </div>
+    
+        <div>
+            4 : 我是你哥哥asdf   @ 19:46:31
+            <a href="/todo/edit?id=4">edit</a>
+            <a href="/todo/delete?id=4">删除</a>
+        </div>
+    
+</body>
+</html>
+2019/02/27 19:46:31 响应结束
+2019/02/27 19:47:39 start at :3000
+2019/02/27 19:47:42 start at :3000
+2019/02/27 19:47:44 
+
+完整请求 *******************************************************
+2019/02/27 19:47:44 GET /todo HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+
+2019/02/27 19:47:44 请求结束
+2019/02/27 19:47:44 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:47:44 path and query /todo {}
+2019/02/27 19:47:44 Model all
+2019/02/27 19:47:44 Todo __init__ {'id': 1, 'task': '你好小孩ddd', 'completed': False, 'user_id': -1, 'created_time': 1551158680, 'updated_time': None}
+2019/02/27 19:47:44 Todo __init__ {'id': 2, 'task': '嘉怡asdfasdasdda', 'completed': False, 'user_id': -1, 'created_time': 1551158682, 'updated_time': None}
+2019/02/27 19:47:44 Todo __init__ {'id': 3, 'task': '小仙女asdf', 'completed': False, 'user_id': -1, 'created_time': 1551158687, 'updated_time': None}
+2019/02/27 19:47:44 Todo __init__ {'id': 4, 'task': '我是你哥哥asdf', 'completed': False, 'user_id': -1, 'created_time': 1551158695, 'updated_time': None}
+2019/02/27 19:47:44 template simple_todo_index.html {'todos': [< Todo
+id: (1)
+task: (你好小孩ddd)
+completed: (False)
+user_id: (-1)
+created_time: (1551158680)
+updated_time: (None) 
+>
+, < Todo
+id: (2)
+task: (嘉怡asdfasdasdda)
+completed: (False)
+user_id: (-1)
+created_time: (1551158682)
+updated_time: (None) 
+>
+, < Todo
+id: (3)
+task: (小仙女asdf)
+completed: (False)
+user_id: (-1)
+created_time: (1551158687)
+updated_time: (None) 
+>
+, < Todo
+id: (4)
+task: (我是你哥哥asdf)
+completed: (False)
+user_id: (-1)
+created_time: (1551158695)
+updated_time: (None) 
+>
+]}
+2019/02/27 19:47:44 http_response None
+2019/02/27 19:47:44 http_response HTTP/1.1 200 OK
+Content-Type: text/html
+
+2019/02/27 19:47:45 HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo</title>
+</head>
+<body>
+    <form action="/todo/add" method="post">
+        <input name="task">
+        <button>add todo</button>
+    </form>
+
+    
+        <div>
+            1 : 你好小孩ddd   @ 19:47:44
+            <a href="/todo/edit?id=1">edit</a>
+            <a href="/todo/delete?id=1">删除</a>
+        </div>
+    
+        <div>
+            2 : 嘉怡asdfasdasdda   @ 19:47:44
+            <a href="/todo/edit?id=2">edit</a>
+            <a href="/todo/delete?id=2">删除</a>
+        </div>
+    
+        <div>
+            3 : 小仙女asdf   @ 19:47:44
+            <a href="/todo/edit?id=3">edit</a>
+            <a href="/todo/delete?id=3">删除</a>
+        </div>
+    
+        <div>
+            4 : 我是你哥哥asdf   @ 19:47:44
+            <a href="/todo/edit?id=4">edit</a>
+            <a href="/todo/delete?id=4">删除</a>
+        </div>
+    
+</body>
+</html>
+2019/02/27 19:47:45 响应结束
+2019/02/27 19:47:46 
+
+完整请求 *******************************************************
+2019/02/27 19:47:46 GET /todo/edit?id=1 HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+
+2019/02/27 19:47:46 请求结束
+2019/02/27 19:47:46 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:47:46 path and query /todo/edit {'id': '1'}
+2019/02/27 19:47:46 Model all
+2019/02/27 19:47:46 Todo __init__ {'id': 1, 'task': '你好小孩ddd', 'completed': False, 'user_id': -1, 'created_time': 1551158680, 'updated_time': None}
+2019/02/27 19:47:46 Todo __init__ {'id': 2, 'task': '嘉怡asdfasdasdda', 'completed': False, 'user_id': -1, 'created_time': 1551158682, 'updated_time': None}
+2019/02/27 19:47:46 Todo __init__ {'id': 3, 'task': '小仙女asdf', 'completed': False, 'user_id': -1, 'created_time': 1551158687, 'updated_time': None}
+2019/02/27 19:47:46 Todo __init__ {'id': 4, 'task': '我是你哥哥asdf', 'completed': False, 'user_id': -1, 'created_time': 1551158695, 'updated_time': None}
+2019/02/27 19:47:46 debug EDIT < Todo
+id: (1)
+task: (你好小孩ddd)
+completed: (False)
+user_id: (-1)
+created_time: (1551158680)
+updated_time: (None) 
+>
+
+2019/02/27 19:47:46 template simple_todo_edit.html {'todo': < Todo
+id: (1)
+task: (你好小孩ddd)
+completed: (False)
+user_id: (-1)
+created_time: (1551158680)
+updated_time: (None) 
+>
+}
+2019/02/27 19:47:46 http_response None
+2019/02/27 19:47:46 http_response HTTP/1.1 200 OK
+Content-Type: text/html
+
+2019/02/27 19:47:46 HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo edit</title>
+</head>
+<body>
+    <form action="/todo/update?id=1" method="post">
+        <input name="task" value="你好小孩ddd">
+        <button>update todo</button>
+    </form>
+</body>
+</html>
+2019/02/27 19:47:46 响应结束
+2019/02/27 19:47:48 
+
+完整请求 *******************************************************
+2019/02/27 19:47:48 POST /todo/update?id=1 HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo/edit?id=1
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 45
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+task=%E4%BD%A0%E5%A5%BD%E5%B0%8F%E5%AD%A9dddd
+2019/02/27 19:47:48 请求结束
+2019/02/27 19:47:48 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:47:48 path and query /todo/update {'id': '1'}
+2019/02/27 19:47:48 form self.form task=%E4%BD%A0%E5%A5%BD%E5%B0%8F%E5%AD%A9dddd
+2019/02/27 19:47:48 Model all
+2019/02/27 19:47:48 Todo __init__ {'id': 1, 'task': '你好小孩ddd', 'completed': False, 'user_id': -1, 'created_time': 1551158680, 'updated_time': None}
+2019/02/27 19:47:48 Todo __init__ {'id': 2, 'task': '嘉怡asdfasdasdda', 'completed': False, 'user_id': -1, 'created_time': 1551158682, 'updated_time': None}
+2019/02/27 19:47:48 Todo __init__ {'id': 3, 'task': '小仙女asdf', 'completed': False, 'user_id': -1, 'created_time': 1551158687, 'updated_time': None}
+2019/02/27 19:47:48 Todo __init__ {'id': 4, 'task': '我是你哥哥asdf', 'completed': False, 'user_id': -1, 'created_time': 1551158695, 'updated_time': None}
+2019/02/27 19:47:48 classmethod update-model < Todo
+id: (1)
+task: (你好小孩ddd)
+completed: (False)
+user_id: (-1)
+created_time: (1551158680)
+updated_time: (None) 
+>
+
+2019/02/27 19:47:48 update****** {'task': '你好小孩dddd'}
+2019/02/27 19:47:48 Todo update <class 'models.Todo'>
+2019/02/27 19:47:48 Model all
+2019/02/27 19:47:48 Todo __init__ {'id': 1, 'task': '你好小孩ddd', 'completed': False, 'user_id': -1, 'created_time': 1551158680, 'updated_time': None}
+2019/02/27 19:47:48 Todo __init__ {'id': 2, 'task': '嘉怡asdfasdasdda', 'completed': False, 'user_id': -1, 'created_time': 1551158682, 'updated_time': None}
+2019/02/27 19:47:48 Todo __init__ {'id': 3, 'task': '小仙女asdf', 'completed': False, 'user_id': -1, 'created_time': 1551158687, 'updated_time': None}
+2019/02/27 19:47:48 Todo __init__ {'id': 4, 'task': '我是你哥哥asdf', 'completed': False, 'user_id': -1, 'created_time': 1551158695, 'updated_time': None}
+2019/02/27 19:47:48 debug 0
+2019/02/27 19:47:48 HTTP/1.1 302 OK
+Content-Type: text/html
+Location: /todo
+
+
+2019/02/27 19:47:48 响应结束
+2019/02/27 19:47:48 
+
+完整请求 *******************************************************
+2019/02/27 19:47:48 GET /todo HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo/edit?id=1
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+
+2019/02/27 19:47:48 请求结束
+2019/02/27 19:47:48 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:47:48 path and query /todo {}
+2019/02/27 19:47:48 Model all
+2019/02/27 19:47:48 Todo __init__ {'id': 1, 'task': '你好小孩dddd', 'completed': False, 'user_id': -1, 'created_time': 1551158680, 'updated_time': 1551268068}
+2019/02/27 19:47:48 Todo __init__ {'id': 2, 'task': '嘉怡asdfasdasdda', 'completed': False, 'user_id': -1, 'created_time': 1551158682, 'updated_time': None}
+2019/02/27 19:47:48 Todo __init__ {'id': 3, 'task': '小仙女asdf', 'completed': False, 'user_id': -1, 'created_time': 1551158687, 'updated_time': None}
+2019/02/27 19:47:48 Todo __init__ {'id': 4, 'task': '我是你哥哥asdf', 'completed': False, 'user_id': -1, 'created_time': 1551158695, 'updated_time': None}
+2019/02/27 19:47:48 template simple_todo_index.html {'todos': [< Todo
+id: (1)
+task: (你好小孩dddd)
+completed: (False)
+user_id: (-1)
+created_time: (1551158680)
+updated_time: (1551268068) 
+>
+, < Todo
+id: (2)
+task: (嘉怡asdfasdasdda)
+completed: (False)
+user_id: (-1)
+created_time: (1551158682)
+updated_time: (None) 
+>
+, < Todo
+id: (3)
+task: (小仙女asdf)
+completed: (False)
+user_id: (-1)
+created_time: (1551158687)
+updated_time: (None) 
+>
+, < Todo
+id: (4)
+task: (我是你哥哥asdf)
+completed: (False)
+user_id: (-1)
+created_time: (1551158695)
+updated_time: (None) 
+>
+]}
+2019/02/27 19:47:48 http_response None
+2019/02/27 19:47:48 http_response HTTP/1.1 200 OK
+Content-Type: text/html
+
+2019/02/27 19:47:48 HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo</title>
+</head>
+<body>
+    <form action="/todo/add" method="post">
+        <input name="task">
+        <button>add todo</button>
+    </form>
+
+    
+        <div>
+            1 : 你好小孩dddd   @ 19:47:48
+            <a href="/todo/edit?id=1">edit</a>
+            <a href="/todo/delete?id=1">删除</a>
+        </div>
+    
+        <div>
+            2 : 嘉怡asdfasdasdda   @ 19:47:48
+            <a href="/todo/edit?id=2">edit</a>
+            <a href="/todo/delete?id=2">删除</a>
+        </div>
+    
+        <div>
+            3 : 小仙女asdf   @ 19:47:48
+            <a href="/todo/edit?id=3">edit</a>
+            <a href="/todo/delete?id=3">删除</a>
+        </div>
+    
+        <div>
+            4 : 我是你哥哥asdf   @ 19:47:48
+            <a href="/todo/edit?id=4">edit</a>
+            <a href="/todo/delete?id=4">删除</a>
+        </div>
+    
+</body>
+</html>
+2019/02/27 19:47:48 响应结束
+2019/02/27 19:47:50 
+
+完整请求 *******************************************************
+2019/02/27 19:47:50 GET /todo/edit?id=2 HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+
+2019/02/27 19:47:50 请求结束
+2019/02/27 19:47:50 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:47:50 path and query /todo/edit {'id': '2'}
+2019/02/27 19:47:50 Model all
+2019/02/27 19:47:50 Todo __init__ {'id': 1, 'task': '你好小孩dddd', 'completed': False, 'user_id': -1, 'created_time': 1551158680, 'updated_time': 1551268068}
+2019/02/27 19:47:50 Todo __init__ {'id': 2, 'task': '嘉怡asdfasdasdda', 'completed': False, 'user_id': -1, 'created_time': 1551158682, 'updated_time': None}
+2019/02/27 19:47:50 Todo __init__ {'id': 3, 'task': '小仙女asdf', 'completed': False, 'user_id': -1, 'created_time': 1551158687, 'updated_time': None}
+2019/02/27 19:47:50 Todo __init__ {'id': 4, 'task': '我是你哥哥asdf', 'completed': False, 'user_id': -1, 'created_time': 1551158695, 'updated_time': None}
+2019/02/27 19:47:50 debug EDIT < Todo
+id: (2)
+task: (嘉怡asdfasdasdda)
+completed: (False)
+user_id: (-1)
+created_time: (1551158682)
+updated_time: (None) 
+>
+
+2019/02/27 19:47:50 template simple_todo_edit.html {'todo': < Todo
+id: (2)
+task: (嘉怡asdfasdasdda)
+completed: (False)
+user_id: (-1)
+created_time: (1551158682)
+updated_time: (None) 
+>
+}
+2019/02/27 19:47:50 http_response None
+2019/02/27 19:47:50 http_response HTTP/1.1 200 OK
+Content-Type: text/html
+
+2019/02/27 19:47:50 HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo edit</title>
+</head>
+<body>
+    <form action="/todo/update?id=2" method="post">
+        <input name="task" value="嘉怡asdfasdasdda">
+        <button>update todo</button>
+    </form>
+</body>
+</html>
+2019/02/27 19:47:50 响应结束
+2019/02/27 19:47:51 
+
+完整请求 *******************************************************
+2019/02/27 19:47:51 POST /todo/update?id=2 HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo/edit?id=2
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 36
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+task=%E5%98%89%E6%80%A1asdfasdasddda
+2019/02/27 19:47:51 请求结束
+2019/02/27 19:47:51 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:47:51 path and query /todo/update {'id': '2'}
+2019/02/27 19:47:51 form self.form task=%E5%98%89%E6%80%A1asdfasdasddda
+2019/02/27 19:47:51 Model all
+2019/02/27 19:47:51 Todo __init__ {'id': 1, 'task': '你好小孩dddd', 'completed': False, 'user_id': -1, 'created_time': 1551158680, 'updated_time': 1551268068}
+2019/02/27 19:47:51 Todo __init__ {'id': 2, 'task': '嘉怡asdfasdasdda', 'completed': False, 'user_id': -1, 'created_time': 1551158682, 'updated_time': None}
+2019/02/27 19:47:51 Todo __init__ {'id': 3, 'task': '小仙女asdf', 'completed': False, 'user_id': -1, 'created_time': 1551158687, 'updated_time': None}
+2019/02/27 19:47:51 Todo __init__ {'id': 4, 'task': '我是你哥哥asdf', 'completed': False, 'user_id': -1, 'created_time': 1551158695, 'updated_time': None}
+2019/02/27 19:47:51 classmethod update-model < Todo
+id: (2)
+task: (嘉怡asdfasdasdda)
+completed: (False)
+user_id: (-1)
+created_time: (1551158682)
+updated_time: (None) 
+>
+
+2019/02/27 19:47:51 update****** {'task': '嘉怡asdfasdasddda'}
+2019/02/27 19:47:51 Todo update <class 'models.Todo'>
+2019/02/27 19:47:51 Model all
+2019/02/27 19:47:51 Todo __init__ {'id': 1, 'task': '你好小孩dddd', 'completed': False, 'user_id': -1, 'created_time': 1551158680, 'updated_time': 1551268068}
+2019/02/27 19:47:51 Todo __init__ {'id': 2, 'task': '嘉怡asdfasdasdda', 'completed': False, 'user_id': -1, 'created_time': 1551158682, 'updated_time': None}
+2019/02/27 19:47:51 Todo __init__ {'id': 3, 'task': '小仙女asdf', 'completed': False, 'user_id': -1, 'created_time': 1551158687, 'updated_time': None}
+2019/02/27 19:47:51 Todo __init__ {'id': 4, 'task': '我是你哥哥asdf', 'completed': False, 'user_id': -1, 'created_time': 1551158695, 'updated_time': None}
+2019/02/27 19:47:51 debug 1
+2019/02/27 19:47:51 HTTP/1.1 302 OK
+Content-Type: text/html
+Location: /todo
+
+
+2019/02/27 19:47:51 响应结束
+2019/02/27 19:47:51 
+
+完整请求 *******************************************************
+2019/02/27 19:47:51 GET /todo HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo/edit?id=2
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+
+2019/02/27 19:47:51 请求结束
+2019/02/27 19:47:51 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:47:51 path and query /todo {}
+2019/02/27 19:47:51 Model all
+2019/02/27 19:47:51 Todo __init__ {'id': 1, 'task': '你好小孩dddd', 'completed': False, 'user_id': -1, 'created_time': 1551158680, 'updated_time': 1551268068}
+2019/02/27 19:47:51 Todo __init__ {'id': 2, 'task': '嘉怡asdfasdasddda', 'completed': False, 'user_id': -1, 'created_time': 1551158682, 'updated_time': 1551268071}
+2019/02/27 19:47:51 Todo __init__ {'id': 3, 'task': '小仙女asdf', 'completed': False, 'user_id': -1, 'created_time': 1551158687, 'updated_time': None}
+2019/02/27 19:47:51 Todo __init__ {'id': 4, 'task': '我是你哥哥asdf', 'completed': False, 'user_id': -1, 'created_time': 1551158695, 'updated_time': None}
+2019/02/27 19:47:51 template simple_todo_index.html {'todos': [< Todo
+id: (1)
+task: (你好小孩dddd)
+completed: (False)
+user_id: (-1)
+created_time: (1551158680)
+updated_time: (1551268068) 
+>
+, < Todo
+id: (2)
+task: (嘉怡asdfasdasddda)
+completed: (False)
+user_id: (-1)
+created_time: (1551158682)
+updated_time: (1551268071) 
+>
+, < Todo
+id: (3)
+task: (小仙女asdf)
+completed: (False)
+user_id: (-1)
+created_time: (1551158687)
+updated_time: (None) 
+>
+, < Todo
+id: (4)
+task: (我是你哥哥asdf)
+completed: (False)
+user_id: (-1)
+created_time: (1551158695)
+updated_time: (None) 
+>
+]}
+2019/02/27 19:47:51 http_response None
+2019/02/27 19:47:51 http_response HTTP/1.1 200 OK
+Content-Type: text/html
+
+2019/02/27 19:47:51 HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo</title>
+</head>
+<body>
+    <form action="/todo/add" method="post">
+        <input name="task">
+        <button>add todo</button>
+    </form>
+
+    
+        <div>
+            1 : 你好小孩dddd   @ 19:47:48
+            <a href="/todo/edit?id=1">edit</a>
+            <a href="/todo/delete?id=1">删除</a>
+        </div>
+    
+        <div>
+            2 : 嘉怡asdfasdasddda   @ 19:47:51
+            <a href="/todo/edit?id=2">edit</a>
+            <a href="/todo/delete?id=2">删除</a>
+        </div>
+    
+        <div>
+            3 : 小仙女asdf   @ 19:47:51
+            <a href="/todo/edit?id=3">edit</a>
+            <a href="/todo/delete?id=3">删除</a>
+        </div>
+    
+        <div>
+            4 : 我是你哥哥asdf   @ 19:47:51
+            <a href="/todo/edit?id=4">edit</a>
+            <a href="/todo/delete?id=4">删除</a>
+        </div>
+    
+</body>
+</html>
+2019/02/27 19:47:51 响应结束
+2019/02/27 19:47:54 
+
+完整请求 *******************************************************
+2019/02/27 19:47:54 GET /todo/edit?id=4 HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+
+2019/02/27 19:47:54 请求结束
+2019/02/27 19:47:54 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:47:54 path and query /todo/edit {'id': '4'}
+2019/02/27 19:47:54 Model all
+2019/02/27 19:47:55 Todo __init__ {'id': 1, 'task': '你好小孩dddd', 'completed': False, 'user_id': -1, 'created_time': 1551158680, 'updated_time': 1551268068}
+2019/02/27 19:47:55 Todo __init__ {'id': 2, 'task': '嘉怡asdfasdasddda', 'completed': False, 'user_id': -1, 'created_time': 1551158682, 'updated_time': 1551268071}
+2019/02/27 19:47:55 Todo __init__ {'id': 3, 'task': '小仙女asdf', 'completed': False, 'user_id': -1, 'created_time': 1551158687, 'updated_time': None}
+2019/02/27 19:47:55 Todo __init__ {'id': 4, 'task': '我是你哥哥asdf', 'completed': False, 'user_id': -1, 'created_time': 1551158695, 'updated_time': None}
+2019/02/27 19:47:55 debug EDIT < Todo
+id: (4)
+task: (我是你哥哥asdf)
+completed: (False)
+user_id: (-1)
+created_time: (1551158695)
+updated_time: (None) 
+>
+
+2019/02/27 19:47:55 template simple_todo_edit.html {'todo': < Todo
+id: (4)
+task: (我是你哥哥asdf)
+completed: (False)
+user_id: (-1)
+created_time: (1551158695)
+updated_time: (None) 
+>
+}
+2019/02/27 19:47:55 http_response None
+2019/02/27 19:47:55 http_response HTTP/1.1 200 OK
+Content-Type: text/html
+
+2019/02/27 19:47:55 HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo edit</title>
+</head>
+<body>
+    <form action="/todo/update?id=4" method="post">
+        <input name="task" value="我是你哥哥asdf">
+        <button>update todo</button>
+    </form>
+</body>
+</html>
+2019/02/27 19:47:55 响应结束
+2019/02/27 19:47:56 
+
+完整请求 *******************************************************
+2019/02/27 19:47:56 POST /todo/update?id=4 HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo/edit?id=4
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 55
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+task=%E6%88%91%E6%98%AF%E4%BD%A0%E5%93%A5%E5%93%A5asdfd
+2019/02/27 19:47:56 请求结束
+2019/02/27 19:47:56 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:47:56 path and query /todo/update {'id': '4'}
+2019/02/27 19:47:56 form self.form task=%E6%88%91%E6%98%AF%E4%BD%A0%E5%93%A5%E5%93%A5asdfd
+2019/02/27 19:47:56 Model all
+2019/02/27 19:47:56 Todo __init__ {'id': 1, 'task': '你好小孩dddd', 'completed': False, 'user_id': -1, 'created_time': 1551158680, 'updated_time': 1551268068}
+2019/02/27 19:47:56 Todo __init__ {'id': 2, 'task': '嘉怡asdfasdasddda', 'completed': False, 'user_id': -1, 'created_time': 1551158682, 'updated_time': 1551268071}
+2019/02/27 19:47:56 Todo __init__ {'id': 3, 'task': '小仙女asdf', 'completed': False, 'user_id': -1, 'created_time': 1551158687, 'updated_time': None}
+2019/02/27 19:47:56 Todo __init__ {'id': 4, 'task': '我是你哥哥asdf', 'completed': False, 'user_id': -1, 'created_time': 1551158695, 'updated_time': None}
+2019/02/27 19:47:56 classmethod update-model < Todo
+id: (4)
+task: (我是你哥哥asdf)
+completed: (False)
+user_id: (-1)
+created_time: (1551158695)
+updated_time: (None) 
+>
+
+2019/02/27 19:47:56 update****** {'task': '我是你哥哥asdfd'}
+2019/02/27 19:47:56 Todo update <class 'models.Todo'>
+2019/02/27 19:47:56 Model all
+2019/02/27 19:47:56 Todo __init__ {'id': 1, 'task': '你好小孩dddd', 'completed': False, 'user_id': -1, 'created_time': 1551158680, 'updated_time': 1551268068}
+2019/02/27 19:47:56 Todo __init__ {'id': 2, 'task': '嘉怡asdfasdasddda', 'completed': False, 'user_id': -1, 'created_time': 1551158682, 'updated_time': 1551268071}
+2019/02/27 19:47:56 Todo __init__ {'id': 3, 'task': '小仙女asdf', 'completed': False, 'user_id': -1, 'created_time': 1551158687, 'updated_time': None}
+2019/02/27 19:47:56 Todo __init__ {'id': 4, 'task': '我是你哥哥asdf', 'completed': False, 'user_id': -1, 'created_time': 1551158695, 'updated_time': None}
+2019/02/27 19:47:56 debug 3
+2019/02/27 19:47:56 HTTP/1.1 302 OK
+Content-Type: text/html
+Location: /todo
+
+
+2019/02/27 19:47:56 响应结束
+2019/02/27 19:47:56 
+
+完整请求 *******************************************************
+2019/02/27 19:47:56 GET /todo HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo/edit?id=4
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+
+2019/02/27 19:47:56 请求结束
+2019/02/27 19:47:56 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:47:56 path and query /todo {}
+2019/02/27 19:47:56 Model all
+2019/02/27 19:47:56 Todo __init__ {'id': 1, 'task': '你好小孩dddd', 'completed': False, 'user_id': -1, 'created_time': 1551158680, 'updated_time': 1551268068}
+2019/02/27 19:47:56 Todo __init__ {'id': 2, 'task': '嘉怡asdfasdasddda', 'completed': False, 'user_id': -1, 'created_time': 1551158682, 'updated_time': 1551268071}
+2019/02/27 19:47:56 Todo __init__ {'id': 3, 'task': '小仙女asdf', 'completed': False, 'user_id': -1, 'created_time': 1551158687, 'updated_time': None}
+2019/02/27 19:47:56 Todo __init__ {'id': 4, 'task': '我是你哥哥asdfd', 'completed': False, 'user_id': -1, 'created_time': 1551158695, 'updated_time': 1551268076}
+2019/02/27 19:47:56 template simple_todo_index.html {'todos': [< Todo
+id: (1)
+task: (你好小孩dddd)
+completed: (False)
+user_id: (-1)
+created_time: (1551158680)
+updated_time: (1551268068) 
+>
+, < Todo
+id: (2)
+task: (嘉怡asdfasdasddda)
+completed: (False)
+user_id: (-1)
+created_time: (1551158682)
+updated_time: (1551268071) 
+>
+, < Todo
+id: (3)
+task: (小仙女asdf)
+completed: (False)
+user_id: (-1)
+created_time: (1551158687)
+updated_time: (None) 
+>
+, < Todo
+id: (4)
+task: (我是你哥哥asdfd)
+completed: (False)
+user_id: (-1)
+created_time: (1551158695)
+updated_time: (1551268076) 
+>
+]}
+2019/02/27 19:47:56 http_response None
+2019/02/27 19:47:56 http_response HTTP/1.1 200 OK
+Content-Type: text/html
+
+2019/02/27 19:47:56 HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo</title>
+</head>
+<body>
+    <form action="/todo/add" method="post">
+        <input name="task">
+        <button>add todo</button>
+    </form>
+
+    
+        <div>
+            1 : 你好小孩dddd   @ 19:47:48
+            <a href="/todo/edit?id=1">edit</a>
+            <a href="/todo/delete?id=1">删除</a>
+        </div>
+    
+        <div>
+            2 : 嘉怡asdfasdasddda   @ 19:47:51
+            <a href="/todo/edit?id=2">edit</a>
+            <a href="/todo/delete?id=2">删除</a>
+        </div>
+    
+        <div>
+            3 : 小仙女asdf   @ 19:47:56
+            <a href="/todo/edit?id=3">edit</a>
+            <a href="/todo/delete?id=3">删除</a>
+        </div>
+    
+        <div>
+            4 : 我是你哥哥asdfd   @ 19:47:56
+            <a href="/todo/edit?id=4">edit</a>
+            <a href="/todo/delete?id=4">删除</a>
+        </div>
+    
+</body>
+</html>
+2019/02/27 19:47:56 响应结束
+2019/02/27 19:47:58 
+
+完整请求 *******************************************************
+2019/02/27 19:47:58 GET /todo/edit?id=3 HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+
+2019/02/27 19:47:58 请求结束
+2019/02/27 19:47:58 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:47:58 path and query /todo/edit {'id': '3'}
+2019/02/27 19:47:58 Model all
+2019/02/27 19:47:58 Todo __init__ {'id': 1, 'task': '你好小孩dddd', 'completed': False, 'user_id': -1, 'created_time': 1551158680, 'updated_time': 1551268068}
+2019/02/27 19:47:58 Todo __init__ {'id': 2, 'task': '嘉怡asdfasdasddda', 'completed': False, 'user_id': -1, 'created_time': 1551158682, 'updated_time': 1551268071}
+2019/02/27 19:47:58 Todo __init__ {'id': 3, 'task': '小仙女asdf', 'completed': False, 'user_id': -1, 'created_time': 1551158687, 'updated_time': None}
+2019/02/27 19:47:58 Todo __init__ {'id': 4, 'task': '我是你哥哥asdfd', 'completed': False, 'user_id': -1, 'created_time': 1551158695, 'updated_time': 1551268076}
+2019/02/27 19:47:58 debug EDIT < Todo
+id: (3)
+task: (小仙女asdf)
+completed: (False)
+user_id: (-1)
+created_time: (1551158687)
+updated_time: (None) 
+>
+
+2019/02/27 19:47:58 template simple_todo_edit.html {'todo': < Todo
+id: (3)
+task: (小仙女asdf)
+completed: (False)
+user_id: (-1)
+created_time: (1551158687)
+updated_time: (None) 
+>
+}
+2019/02/27 19:47:58 http_response None
+2019/02/27 19:47:58 http_response HTTP/1.1 200 OK
+Content-Type: text/html
+
+2019/02/27 19:47:58 HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo edit</title>
+</head>
+<body>
+    <form action="/todo/update?id=3" method="post">
+        <input name="task" value="小仙女asdf">
+        <button>update todo</button>
+    </form>
+</body>
+</html>
+2019/02/27 19:47:58 响应结束
+2019/02/27 19:47:59 
+
+完整请求 *******************************************************
+2019/02/27 19:47:59 POST /todo/update?id=3 HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo/edit?id=3
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 38
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+task=%E5%B0%8F%E4%BB%99%E5%A5%B3asdfad
+2019/02/27 19:47:59 请求结束
+2019/02/27 19:47:59 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:47:59 path and query /todo/update {'id': '3'}
+2019/02/27 19:47:59 form self.form task=%E5%B0%8F%E4%BB%99%E5%A5%B3asdfad
+2019/02/27 19:47:59 Model all
+2019/02/27 19:48:00 Todo __init__ {'id': 1, 'task': '你好小孩dddd', 'completed': False, 'user_id': -1, 'created_time': 1551158680, 'updated_time': 1551268068}
+2019/02/27 19:48:00 Todo __init__ {'id': 2, 'task': '嘉怡asdfasdasddda', 'completed': False, 'user_id': -1, 'created_time': 1551158682, 'updated_time': 1551268071}
+2019/02/27 19:48:00 Todo __init__ {'id': 3, 'task': '小仙女asdf', 'completed': False, 'user_id': -1, 'created_time': 1551158687, 'updated_time': None}
+2019/02/27 19:48:00 Todo __init__ {'id': 4, 'task': '我是你哥哥asdfd', 'completed': False, 'user_id': -1, 'created_time': 1551158695, 'updated_time': 1551268076}
+2019/02/27 19:48:00 classmethod update-model < Todo
+id: (3)
+task: (小仙女asdf)
+completed: (False)
+user_id: (-1)
+created_time: (1551158687)
+updated_time: (None) 
+>
+
+2019/02/27 19:48:00 update****** {'task': '小仙女asdfad'}
+2019/02/27 19:48:00 Todo update <class 'models.Todo'>
+2019/02/27 19:48:00 Model all
+2019/02/27 19:48:00 Todo __init__ {'id': 1, 'task': '你好小孩dddd', 'completed': False, 'user_id': -1, 'created_time': 1551158680, 'updated_time': 1551268068}
+2019/02/27 19:48:00 Todo __init__ {'id': 2, 'task': '嘉怡asdfasdasddda', 'completed': False, 'user_id': -1, 'created_time': 1551158682, 'updated_time': 1551268071}
+2019/02/27 19:48:00 Todo __init__ {'id': 3, 'task': '小仙女asdf', 'completed': False, 'user_id': -1, 'created_time': 1551158687, 'updated_time': None}
+2019/02/27 19:48:00 Todo __init__ {'id': 4, 'task': '我是你哥哥asdfd', 'completed': False, 'user_id': -1, 'created_time': 1551158695, 'updated_time': 1551268076}
+2019/02/27 19:48:00 debug 2
+2019/02/27 19:48:00 HTTP/1.1 302 OK
+Content-Type: text/html
+Location: /todo
+
+
+2019/02/27 19:48:00 响应结束
+2019/02/27 19:48:00 
+
+完整请求 *******************************************************
+2019/02/27 19:48:00 GET /todo HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo/edit?id=3
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+
+2019/02/27 19:48:00 请求结束
+2019/02/27 19:48:00 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:48:00 path and query /todo {}
+2019/02/27 19:48:00 Model all
+2019/02/27 19:48:00 Todo __init__ {'id': 1, 'task': '你好小孩dddd', 'completed': False, 'user_id': -1, 'created_time': 1551158680, 'updated_time': 1551268068}
+2019/02/27 19:48:00 Todo __init__ {'id': 2, 'task': '嘉怡asdfasdasddda', 'completed': False, 'user_id': -1, 'created_time': 1551158682, 'updated_time': 1551268071}
+2019/02/27 19:48:00 Todo __init__ {'id': 3, 'task': '小仙女asdfad', 'completed': False, 'user_id': -1, 'created_time': 1551158687, 'updated_time': 1551268080}
+2019/02/27 19:48:00 Todo __init__ {'id': 4, 'task': '我是你哥哥asdfd', 'completed': False, 'user_id': -1, 'created_time': 1551158695, 'updated_time': 1551268076}
+2019/02/27 19:48:00 template simple_todo_index.html {'todos': [< Todo
+id: (1)
+task: (你好小孩dddd)
+completed: (False)
+user_id: (-1)
+created_time: (1551158680)
+updated_time: (1551268068) 
+>
+, < Todo
+id: (2)
+task: (嘉怡asdfasdasddda)
+completed: (False)
+user_id: (-1)
+created_time: (1551158682)
+updated_time: (1551268071) 
+>
+, < Todo
+id: (3)
+task: (小仙女asdfad)
+completed: (False)
+user_id: (-1)
+created_time: (1551158687)
+updated_time: (1551268080) 
+>
+, < Todo
+id: (4)
+task: (我是你哥哥asdfd)
+completed: (False)
+user_id: (-1)
+created_time: (1551158695)
+updated_time: (1551268076) 
+>
+]}
+2019/02/27 19:48:00 http_response None
+2019/02/27 19:48:00 http_response HTTP/1.1 200 OK
+Content-Type: text/html
+
+2019/02/27 19:48:00 HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo</title>
+</head>
+<body>
+    <form action="/todo/add" method="post">
+        <input name="task">
+        <button>add todo</button>
+    </form>
+
+    
+        <div>
+            1 : 你好小孩dddd   @ 19:47:48
+            <a href="/todo/edit?id=1">edit</a>
+            <a href="/todo/delete?id=1">删除</a>
+        </div>
+    
+        <div>
+            2 : 嘉怡asdfasdasddda   @ 19:47:51
+            <a href="/todo/edit?id=2">edit</a>
+            <a href="/todo/delete?id=2">删除</a>
+        </div>
+    
+        <div>
+            3 : 小仙女asdfad   @ 19:48:00
+            <a href="/todo/edit?id=3">edit</a>
+            <a href="/todo/delete?id=3">删除</a>
+        </div>
+    
+        <div>
+            4 : 我是你哥哥asdfd   @ 19:47:56
+            <a href="/todo/edit?id=4">edit</a>
+            <a href="/todo/delete?id=4">删除</a>
+        </div>
+    
+</body>
+</html>
+2019/02/27 19:48:00 响应结束
+2019/02/27 19:48:02 
+
+完整请求 *******************************************************
+2019/02/27 19:48:02 GET /todo/edit?id=3 HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+
+2019/02/27 19:48:02 请求结束
+2019/02/27 19:48:02 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:48:02 path and query /todo/edit {'id': '3'}
+2019/02/27 19:48:02 Model all
+2019/02/27 19:48:02 Todo __init__ {'id': 1, 'task': '你好小孩dddd', 'completed': False, 'user_id': -1, 'created_time': 1551158680, 'updated_time': 1551268068}
+2019/02/27 19:48:02 Todo __init__ {'id': 2, 'task': '嘉怡asdfasdasddda', 'completed': False, 'user_id': -1, 'created_time': 1551158682, 'updated_time': 1551268071}
+2019/02/27 19:48:02 Todo __init__ {'id': 3, 'task': '小仙女asdfad', 'completed': False, 'user_id': -1, 'created_time': 1551158687, 'updated_time': 1551268080}
+2019/02/27 19:48:02 Todo __init__ {'id': 4, 'task': '我是你哥哥asdfd', 'completed': False, 'user_id': -1, 'created_time': 1551158695, 'updated_time': 1551268076}
+2019/02/27 19:48:02 debug EDIT < Todo
+id: (3)
+task: (小仙女asdfad)
+completed: (False)
+user_id: (-1)
+created_time: (1551158687)
+updated_time: (1551268080) 
+>
+
+2019/02/27 19:48:02 template simple_todo_edit.html {'todo': < Todo
+id: (3)
+task: (小仙女asdfad)
+completed: (False)
+user_id: (-1)
+created_time: (1551158687)
+updated_time: (1551268080) 
+>
+}
+2019/02/27 19:48:02 http_response None
+2019/02/27 19:48:02 http_response HTTP/1.1 200 OK
+Content-Type: text/html
+
+2019/02/27 19:48:02 HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo edit</title>
+</head>
+<body>
+    <form action="/todo/update?id=3" method="post">
+        <input name="task" value="小仙女asdfad">
+        <button>update todo</button>
+    </form>
+</body>
+</html>
+2019/02/27 19:48:02 响应结束
+2019/02/27 19:48:03 
+
+完整请求 *******************************************************
+2019/02/27 19:48:03 POST /todo/update?id=3 HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo/edit?id=3
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 41
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+task=%E5%B0%8F%E4%BB%99%E5%A5%B3asdfadasd
+2019/02/27 19:48:03 请求结束
+2019/02/27 19:48:03 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:48:03 path and query /todo/update {'id': '3'}
+2019/02/27 19:48:03 form self.form task=%E5%B0%8F%E4%BB%99%E5%A5%B3asdfadasd
+2019/02/27 19:48:03 Model all
+2019/02/27 19:48:03 Todo __init__ {'id': 1, 'task': '你好小孩dddd', 'completed': False, 'user_id': -1, 'created_time': 1551158680, 'updated_time': 1551268068}
+2019/02/27 19:48:03 Todo __init__ {'id': 2, 'task': '嘉怡asdfasdasddda', 'completed': False, 'user_id': -1, 'created_time': 1551158682, 'updated_time': 1551268071}
+2019/02/27 19:48:03 Todo __init__ {'id': 3, 'task': '小仙女asdfad', 'completed': False, 'user_id': -1, 'created_time': 1551158687, 'updated_time': 1551268080}
+2019/02/27 19:48:03 Todo __init__ {'id': 4, 'task': '我是你哥哥asdfd', 'completed': False, 'user_id': -1, 'created_time': 1551158695, 'updated_time': 1551268076}
+2019/02/27 19:48:03 classmethod update-model < Todo
+id: (3)
+task: (小仙女asdfad)
+completed: (False)
+user_id: (-1)
+created_time: (1551158687)
+updated_time: (1551268080) 
+>
+
+2019/02/27 19:48:03 update****** {'task': '小仙女asdfadasd'}
+2019/02/27 19:48:03 Todo update <class 'models.Todo'>
+2019/02/27 19:48:03 Model all
+2019/02/27 19:48:03 Todo __init__ {'id': 1, 'task': '你好小孩dddd', 'completed': False, 'user_id': -1, 'created_time': 1551158680, 'updated_time': 1551268068}
+2019/02/27 19:48:03 Todo __init__ {'id': 2, 'task': '嘉怡asdfasdasddda', 'completed': False, 'user_id': -1, 'created_time': 1551158682, 'updated_time': 1551268071}
+2019/02/27 19:48:03 Todo __init__ {'id': 3, 'task': '小仙女asdfad', 'completed': False, 'user_id': -1, 'created_time': 1551158687, 'updated_time': 1551268080}
+2019/02/27 19:48:03 Todo __init__ {'id': 4, 'task': '我是你哥哥asdfd', 'completed': False, 'user_id': -1, 'created_time': 1551158695, 'updated_time': 1551268076}
+2019/02/27 19:48:03 debug 2
+2019/02/27 19:48:03 HTTP/1.1 302 OK
+Content-Type: text/html
+Location: /todo
+
+
+2019/02/27 19:48:04 响应结束
+2019/02/27 19:48:04 
+
+完整请求 *******************************************************
+2019/02/27 19:48:04 GET /todo HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo/edit?id=3
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+
+2019/02/27 19:48:04 请求结束
+2019/02/27 19:48:04 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:48:04 path and query /todo {}
+2019/02/27 19:48:04 Model all
+2019/02/27 19:48:04 Todo __init__ {'id': 1, 'task': '你好小孩dddd', 'completed': False, 'user_id': -1, 'created_time': 1551158680, 'updated_time': 1551268068}
+2019/02/27 19:48:04 Todo __init__ {'id': 2, 'task': '嘉怡asdfasdasddda', 'completed': False, 'user_id': -1, 'created_time': 1551158682, 'updated_time': 1551268071}
+2019/02/27 19:48:04 Todo __init__ {'id': 3, 'task': '小仙女asdfadasd', 'completed': False, 'user_id': -1, 'created_time': 1551158687, 'updated_time': 1551268083}
+2019/02/27 19:48:04 Todo __init__ {'id': 4, 'task': '我是你哥哥asdfd', 'completed': False, 'user_id': -1, 'created_time': 1551158695, 'updated_time': 1551268076}
+2019/02/27 19:48:04 template simple_todo_index.html {'todos': [< Todo
+id: (1)
+task: (你好小孩dddd)
+completed: (False)
+user_id: (-1)
+created_time: (1551158680)
+updated_time: (1551268068) 
+>
+, < Todo
+id: (2)
+task: (嘉怡asdfasdasddda)
+completed: (False)
+user_id: (-1)
+created_time: (1551158682)
+updated_time: (1551268071) 
+>
+, < Todo
+id: (3)
+task: (小仙女asdfadasd)
+completed: (False)
+user_id: (-1)
+created_time: (1551158687)
+updated_time: (1551268083) 
+>
+, < Todo
+id: (4)
+task: (我是你哥哥asdfd)
+completed: (False)
+user_id: (-1)
+created_time: (1551158695)
+updated_time: (1551268076) 
+>
+]}
+2019/02/27 19:48:04 http_response None
+2019/02/27 19:48:04 http_response HTTP/1.1 200 OK
+Content-Type: text/html
+
+2019/02/27 19:48:04 HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo</title>
+</head>
+<body>
+    <form action="/todo/add" method="post">
+        <input name="task">
+        <button>add todo</button>
+    </form>
+
+    
+        <div>
+            1 : 你好小孩dddd   @ 19:47:48
+            <a href="/todo/edit?id=1">edit</a>
+            <a href="/todo/delete?id=1">删除</a>
+        </div>
+    
+        <div>
+            2 : 嘉怡asdfasdasddda   @ 19:47:51
+            <a href="/todo/edit?id=2">edit</a>
+            <a href="/todo/delete?id=2">删除</a>
+        </div>
+    
+        <div>
+            3 : 小仙女asdfadasd   @ 19:48:03
+            <a href="/todo/edit?id=3">edit</a>
+            <a href="/todo/delete?id=3">删除</a>
+        </div>
+    
+        <div>
+            4 : 我是你哥哥asdfd   @ 19:47:56
+            <a href="/todo/edit?id=4">edit</a>
+            <a href="/todo/delete?id=4">删除</a>
+        </div>
+    
+</body>
+</html>
+2019/02/27 19:48:04 响应结束
+2019/02/27 19:48:07 
+
+完整请求 *******************************************************
+2019/02/27 19:48:07 GET /todo/edit?id=2 HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+
+2019/02/27 19:48:07 请求结束
+2019/02/27 19:48:07 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:48:07 path and query /todo/edit {'id': '2'}
+2019/02/27 19:48:07 Model all
+2019/02/27 19:48:07 Todo __init__ {'id': 1, 'task': '你好小孩dddd', 'completed': False, 'user_id': -1, 'created_time': 1551158680, 'updated_time': 1551268068}
+2019/02/27 19:48:07 Todo __init__ {'id': 2, 'task': '嘉怡asdfasdasddda', 'completed': False, 'user_id': -1, 'created_time': 1551158682, 'updated_time': 1551268071}
+2019/02/27 19:48:07 Todo __init__ {'id': 3, 'task': '小仙女asdfadasd', 'completed': False, 'user_id': -1, 'created_time': 1551158687, 'updated_time': 1551268083}
+2019/02/27 19:48:07 Todo __init__ {'id': 4, 'task': '我是你哥哥asdfd', 'completed': False, 'user_id': -1, 'created_time': 1551158695, 'updated_time': 1551268076}
+2019/02/27 19:48:07 debug EDIT < Todo
+id: (2)
+task: (嘉怡asdfasdasddda)
+completed: (False)
+user_id: (-1)
+created_time: (1551158682)
+updated_time: (1551268071) 
+>
+
+2019/02/27 19:48:07 template simple_todo_edit.html {'todo': < Todo
+id: (2)
+task: (嘉怡asdfasdasddda)
+completed: (False)
+user_id: (-1)
+created_time: (1551158682)
+updated_time: (1551268071) 
+>
+}
+2019/02/27 19:48:07 http_response None
+2019/02/27 19:48:07 http_response HTTP/1.1 200 OK
+Content-Type: text/html
+
+2019/02/27 19:48:07 HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo edit</title>
+</head>
+<body>
+    <form action="/todo/update?id=2" method="post">
+        <input name="task" value="嘉怡asdfasdasddda">
+        <button>update todo</button>
+    </form>
+</body>
+</html>
+2019/02/27 19:48:07 响应结束
+2019/02/27 19:48:08 
+
+完整请求 *******************************************************
+2019/02/27 19:48:08 POST /todo/update?id=2 HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo/edit?id=2
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 43
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+task=%E5%98%89%E6%80%A1asdfasdasdddasdfasda
+2019/02/27 19:48:08 请求结束
+2019/02/27 19:48:08 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:48:08 path and query /todo/update {'id': '2'}
+2019/02/27 19:48:08 form self.form task=%E5%98%89%E6%80%A1asdfasdasdddasdfasda
+2019/02/27 19:48:08 Model all
+2019/02/27 19:48:09 Todo __init__ {'id': 1, 'task': '你好小孩dddd', 'completed': False, 'user_id': -1, 'created_time': 1551158680, 'updated_time': 1551268068}
+2019/02/27 19:48:09 Todo __init__ {'id': 2, 'task': '嘉怡asdfasdasddda', 'completed': False, 'user_id': -1, 'created_time': 1551158682, 'updated_time': 1551268071}
+2019/02/27 19:48:09 Todo __init__ {'id': 3, 'task': '小仙女asdfadasd', 'completed': False, 'user_id': -1, 'created_time': 1551158687, 'updated_time': 1551268083}
+2019/02/27 19:48:09 Todo __init__ {'id': 4, 'task': '我是你哥哥asdfd', 'completed': False, 'user_id': -1, 'created_time': 1551158695, 'updated_time': 1551268076}
+2019/02/27 19:48:09 classmethod update-model < Todo
+id: (2)
+task: (嘉怡asdfasdasddda)
+completed: (False)
+user_id: (-1)
+created_time: (1551158682)
+updated_time: (1551268071) 
+>
+
+2019/02/27 19:48:09 update****** {'task': '嘉怡asdfasdasdddasdfasda'}
+2019/02/27 19:48:09 Todo update <class 'models.Todo'>
+2019/02/27 19:48:09 Model all
+2019/02/27 19:48:09 Todo __init__ {'id': 1, 'task': '你好小孩dddd', 'completed': False, 'user_id': -1, 'created_time': 1551158680, 'updated_time': 1551268068}
+2019/02/27 19:48:09 Todo __init__ {'id': 2, 'task': '嘉怡asdfasdasddda', 'completed': False, 'user_id': -1, 'created_time': 1551158682, 'updated_time': 1551268071}
+2019/02/27 19:48:09 Todo __init__ {'id': 3, 'task': '小仙女asdfadasd', 'completed': False, 'user_id': -1, 'created_time': 1551158687, 'updated_time': 1551268083}
+2019/02/27 19:48:09 Todo __init__ {'id': 4, 'task': '我是你哥哥asdfd', 'completed': False, 'user_id': -1, 'created_time': 1551158695, 'updated_time': 1551268076}
+2019/02/27 19:48:09 debug 1
+2019/02/27 19:48:09 HTTP/1.1 302 OK
+Content-Type: text/html
+Location: /todo
+
+
+2019/02/27 19:48:09 响应结束
+2019/02/27 19:48:09 
+
+完整请求 *******************************************************
+2019/02/27 19:48:09 GET /todo HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo/edit?id=2
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+
+2019/02/27 19:48:09 请求结束
+2019/02/27 19:48:09 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:48:09 path and query /todo {}
+2019/02/27 19:48:09 Model all
+2019/02/27 19:48:09 Todo __init__ {'id': 1, 'task': '你好小孩dddd', 'completed': False, 'user_id': -1, 'created_time': 1551158680, 'updated_time': 1551268068}
+2019/02/27 19:48:09 Todo __init__ {'id': 2, 'task': '嘉怡asdfasdasdddasdfasda', 'completed': False, 'user_id': -1, 'created_time': 1551158682, 'updated_time': 1551268089}
+2019/02/27 19:48:09 Todo __init__ {'id': 3, 'task': '小仙女asdfadasd', 'completed': False, 'user_id': -1, 'created_time': 1551158687, 'updated_time': 1551268083}
+2019/02/27 19:48:09 Todo __init__ {'id': 4, 'task': '我是你哥哥asdfd', 'completed': False, 'user_id': -1, 'created_time': 1551158695, 'updated_time': 1551268076}
+2019/02/27 19:48:09 template simple_todo_index.html {'todos': [< Todo
+id: (1)
+task: (你好小孩dddd)
+completed: (False)
+user_id: (-1)
+created_time: (1551158680)
+updated_time: (1551268068) 
+>
+, < Todo
+id: (2)
+task: (嘉怡asdfasdasdddasdfasda)
+completed: (False)
+user_id: (-1)
+created_time: (1551158682)
+updated_time: (1551268089) 
+>
+, < Todo
+id: (3)
+task: (小仙女asdfadasd)
+completed: (False)
+user_id: (-1)
+created_time: (1551158687)
+updated_time: (1551268083) 
+>
+, < Todo
+id: (4)
+task: (我是你哥哥asdfd)
+completed: (False)
+user_id: (-1)
+created_time: (1551158695)
+updated_time: (1551268076) 
+>
+]}
+2019/02/27 19:48:09 http_response None
+2019/02/27 19:48:09 http_response HTTP/1.1 200 OK
+Content-Type: text/html
+
+2019/02/27 19:48:09 HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo</title>
+</head>
+<body>
+    <form action="/todo/add" method="post">
+        <input name="task">
+        <button>add todo</button>
+    </form>
+
+    
+        <div>
+            1 : 你好小孩dddd   @ 19:47:48
+            <a href="/todo/edit?id=1">edit</a>
+            <a href="/todo/delete?id=1">删除</a>
+        </div>
+    
+        <div>
+            2 : 嘉怡asdfasdasdddasdfasda   @ 19:48:09
+            <a href="/todo/edit?id=2">edit</a>
+            <a href="/todo/delete?id=2">删除</a>
+        </div>
+    
+        <div>
+            3 : 小仙女asdfadasd   @ 19:48:03
+            <a href="/todo/edit?id=3">edit</a>
+            <a href="/todo/delete?id=3">删除</a>
+        </div>
+    
+        <div>
+            4 : 我是你哥哥asdfd   @ 19:47:56
+            <a href="/todo/edit?id=4">edit</a>
+            <a href="/todo/delete?id=4">删除</a>
+        </div>
+    
+</body>
+</html>
+2019/02/27 19:48:09 响应结束
+2019/02/27 19:48:11 
+
+完整请求 *******************************************************
+2019/02/27 19:48:11 GET /todo/edit?id=4 HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+
+2019/02/27 19:48:11 请求结束
+2019/02/27 19:48:11 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:48:11 path and query /todo/edit {'id': '4'}
+2019/02/27 19:48:11 Model all
+2019/02/27 19:48:11 Todo __init__ {'id': 1, 'task': '你好小孩dddd', 'completed': False, 'user_id': -1, 'created_time': 1551158680, 'updated_time': 1551268068}
+2019/02/27 19:48:11 Todo __init__ {'id': 2, 'task': '嘉怡asdfasdasdddasdfasda', 'completed': False, 'user_id': -1, 'created_time': 1551158682, 'updated_time': 1551268089}
+2019/02/27 19:48:11 Todo __init__ {'id': 3, 'task': '小仙女asdfadasd', 'completed': False, 'user_id': -1, 'created_time': 1551158687, 'updated_time': 1551268083}
+2019/02/27 19:48:11 Todo __init__ {'id': 4, 'task': '我是你哥哥asdfd', 'completed': False, 'user_id': -1, 'created_time': 1551158695, 'updated_time': 1551268076}
+2019/02/27 19:48:11 debug EDIT < Todo
+id: (4)
+task: (我是你哥哥asdfd)
+completed: (False)
+user_id: (-1)
+created_time: (1551158695)
+updated_time: (1551268076) 
+>
+
+2019/02/27 19:48:11 template simple_todo_edit.html {'todo': < Todo
+id: (4)
+task: (我是你哥哥asdfd)
+completed: (False)
+user_id: (-1)
+created_time: (1551158695)
+updated_time: (1551268076) 
+>
+}
+2019/02/27 19:48:11 http_response None
+2019/02/27 19:48:11 http_response HTTP/1.1 200 OK
+Content-Type: text/html
+
+2019/02/27 19:48:11 HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo edit</title>
+</head>
+<body>
+    <form action="/todo/update?id=4" method="post">
+        <input name="task" value="我是你哥哥asdfd">
+        <button>update todo</button>
+    </form>
+</body>
+</html>
+2019/02/27 19:48:11 响应结束
+2019/02/27 19:48:13 
+
+完整请求 *******************************************************
+2019/02/27 19:48:13 POST /todo/update?id=4 HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo/edit?id=4
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 58
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+task=%E6%88%91%E6%98%AF%E4%BD%A0%E5%93%A5%E5%93%A5asdfdasd
+2019/02/27 19:48:13 请求结束
+2019/02/27 19:48:13 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:48:13 path and query /todo/update {'id': '4'}
+2019/02/27 19:48:13 form self.form task=%E6%88%91%E6%98%AF%E4%BD%A0%E5%93%A5%E5%93%A5asdfdasd
+2019/02/27 19:48:13 Model all
+2019/02/27 19:48:13 Todo __init__ {'id': 1, 'task': '你好小孩dddd', 'completed': False, 'user_id': -1, 'created_time': 1551158680, 'updated_time': 1551268068}
+2019/02/27 19:48:13 Todo __init__ {'id': 2, 'task': '嘉怡asdfasdasdddasdfasda', 'completed': False, 'user_id': -1, 'created_time': 1551158682, 'updated_time': 1551268089}
+2019/02/27 19:48:13 Todo __init__ {'id': 3, 'task': '小仙女asdfadasd', 'completed': False, 'user_id': -1, 'created_time': 1551158687, 'updated_time': 1551268083}
+2019/02/27 19:48:13 Todo __init__ {'id': 4, 'task': '我是你哥哥asdfd', 'completed': False, 'user_id': -1, 'created_time': 1551158695, 'updated_time': 1551268076}
+2019/02/27 19:48:13 classmethod update-model < Todo
+id: (4)
+task: (我是你哥哥asdfd)
+completed: (False)
+user_id: (-1)
+created_time: (1551158695)
+updated_time: (1551268076) 
+>
+
+2019/02/27 19:48:13 update****** {'task': '我是你哥哥asdfdasd'}
+2019/02/27 19:48:13 Todo update <class 'models.Todo'>
+2019/02/27 19:48:13 Model all
+2019/02/27 19:48:13 Todo __init__ {'id': 1, 'task': '你好小孩dddd', 'completed': False, 'user_id': -1, 'created_time': 1551158680, 'updated_time': 1551268068}
+2019/02/27 19:48:13 Todo __init__ {'id': 2, 'task': '嘉怡asdfasdasdddasdfasda', 'completed': False, 'user_id': -1, 'created_time': 1551158682, 'updated_time': 1551268089}
+2019/02/27 19:48:13 Todo __init__ {'id': 3, 'task': '小仙女asdfadasd', 'completed': False, 'user_id': -1, 'created_time': 1551158687, 'updated_time': 1551268083}
+2019/02/27 19:48:13 Todo __init__ {'id': 4, 'task': '我是你哥哥asdfd', 'completed': False, 'user_id': -1, 'created_time': 1551158695, 'updated_time': 1551268076}
+2019/02/27 19:48:13 debug 3
+2019/02/27 19:48:13 HTTP/1.1 302 OK
+Content-Type: text/html
+Location: /todo
+
+
+2019/02/27 19:48:13 响应结束
+2019/02/27 19:48:13 
+
+完整请求 *******************************************************
+2019/02/27 19:48:13 GET /todo HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo/edit?id=4
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+
+2019/02/27 19:48:13 请求结束
+2019/02/27 19:48:13 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:48:13 path and query /todo {}
+2019/02/27 19:48:13 Model all
+2019/02/27 19:48:13 Todo __init__ {'id': 1, 'task': '你好小孩dddd', 'completed': False, 'user_id': -1, 'created_time': 1551158680, 'updated_time': 1551268068}
+2019/02/27 19:48:13 Todo __init__ {'id': 2, 'task': '嘉怡asdfasdasdddasdfasda', 'completed': False, 'user_id': -1, 'created_time': 1551158682, 'updated_time': 1551268089}
+2019/02/27 19:48:13 Todo __init__ {'id': 3, 'task': '小仙女asdfadasd', 'completed': False, 'user_id': -1, 'created_time': 1551158687, 'updated_time': 1551268083}
+2019/02/27 19:48:13 Todo __init__ {'id': 4, 'task': '我是你哥哥asdfdasd', 'completed': False, 'user_id': -1, 'created_time': 1551158695, 'updated_time': 1551268093}
+2019/02/27 19:48:13 template simple_todo_index.html {'todos': [< Todo
+id: (1)
+task: (你好小孩dddd)
+completed: (False)
+user_id: (-1)
+created_time: (1551158680)
+updated_time: (1551268068) 
+>
+, < Todo
+id: (2)
+task: (嘉怡asdfasdasdddasdfasda)
+completed: (False)
+user_id: (-1)
+created_time: (1551158682)
+updated_time: (1551268089) 
+>
+, < Todo
+id: (3)
+task: (小仙女asdfadasd)
+completed: (False)
+user_id: (-1)
+created_time: (1551158687)
+updated_time: (1551268083) 
+>
+, < Todo
+id: (4)
+task: (我是你哥哥asdfdasd)
+completed: (False)
+user_id: (-1)
+created_time: (1551158695)
+updated_time: (1551268093) 
+>
+]}
+2019/02/27 19:48:13 http_response None
+2019/02/27 19:48:13 http_response HTTP/1.1 200 OK
+Content-Type: text/html
+
+2019/02/27 19:48:13 HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo</title>
+</head>
+<body>
+    <form action="/todo/add" method="post">
+        <input name="task">
+        <button>add todo</button>
+    </form>
+
+    
+        <div>
+            1 : 你好小孩dddd   @ 19:47:48
+            <a href="/todo/edit?id=1">edit</a>
+            <a href="/todo/delete?id=1">删除</a>
+        </div>
+    
+        <div>
+            2 : 嘉怡asdfasdasdddasdfasda   @ 19:48:09
+            <a href="/todo/edit?id=2">edit</a>
+            <a href="/todo/delete?id=2">删除</a>
+        </div>
+    
+        <div>
+            3 : 小仙女asdfadasd   @ 19:48:03
+            <a href="/todo/edit?id=3">edit</a>
+            <a href="/todo/delete?id=3">删除</a>
+        </div>
+    
+        <div>
+            4 : 我是你哥哥asdfdasd   @ 19:48:13
+            <a href="/todo/edit?id=4">edit</a>
+            <a href="/todo/delete?id=4">删除</a>
+        </div>
+    
+</body>
+</html>
+2019/02/27 19:48:13 响应结束
+2019/02/27 19:48:30 
+
+完整请求 *******************************************************
+2019/02/27 19:48:30 GET /todo HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo/edit?id=4
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+Cache-Control: max-age=0
+
+
+2019/02/27 19:48:30 请求结束
+2019/02/27 19:48:30 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:48:30 path and query /todo {}
+2019/02/27 19:48:30 Model all
+2019/02/27 19:48:30 template simple_todo_index.html {'todos': []}
+2019/02/27 19:48:30 http_response None
+2019/02/27 19:48:30 http_response HTTP/1.1 200 OK
+Content-Type: text/html
+
+2019/02/27 19:48:30 HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo</title>
+</head>
+<body>
+    <form action="/todo/add" method="post">
+        <input name="task">
+        <button>add todo</button>
+    </form>
+
+    
+</body>
+</html>
+2019/02/27 19:48:30 响应结束
+2019/02/27 19:48:33 
+
+完整请求 *******************************************************
+2019/02/27 19:48:33 POST /todo/add HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 23
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+task=%E4%BD%A0%E5%A5%BD
+2019/02/27 19:48:33 请求结束
+2019/02/27 19:48:33 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:48:33 path and query /todo/add {}
+2019/02/27 19:48:33 form self.form task=%E4%BD%A0%E5%A5%BD
+2019/02/27 19:48:33 Model new
+2019/02/27 19:48:33 Todo __init__ {'task': '你好'}
+2019/02/27 19:48:33 Model all
+2019/02/27 19:48:33 HTTP/1.1 302 OK
+Content-Type: text/html
+Location: /todo
+
+
+2019/02/27 19:48:33 响应结束
+2019/02/27 19:48:33 
+
+完整请求 *******************************************************
+2019/02/27 19:48:33 GET /todo HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+
+2019/02/27 19:48:33 请求结束
+2019/02/27 19:48:33 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:48:33 path and query /todo {}
+2019/02/27 19:48:33 Model all
+2019/02/27 19:48:33 Todo __init__ {'id': 1, 'task': '你好', 'completed': False, 'user_id': -1, 'created_time': 1551268113, 'updated_time': 1551268113}
+2019/02/27 19:48:33 template simple_todo_index.html {'todos': [< Todo
+id: (1)
+task: (你好)
+completed: (False)
+user_id: (-1)
+created_time: (1551268113)
+updated_time: (1551268113) 
+>
+]}
+2019/02/27 19:48:33 http_response None
+2019/02/27 19:48:33 http_response HTTP/1.1 200 OK
+Content-Type: text/html
+
+2019/02/27 19:48:33 HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo</title>
+</head>
+<body>
+    <form action="/todo/add" method="post">
+        <input name="task">
+        <button>add todo</button>
+    </form>
+
+    
+        <div>
+            1 : 你好   @ 19:48:33
+            <a href="/todo/edit?id=1">edit</a>
+            <a href="/todo/delete?id=1">删除</a>
+        </div>
+    
+</body>
+</html>
+2019/02/27 19:48:33 响应结束
+2019/02/27 19:48:36 
+
+完整请求 *******************************************************
+2019/02/27 19:48:36 POST /todo/add HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 59
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+task=%E6%88%91%E6%98%AF%E4%BD%A0%E7%88%B8%E7%88%B8%E5%90%A7
+2019/02/27 19:48:36 请求结束
+2019/02/27 19:48:36 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:48:36 path and query /todo/add {}
+2019/02/27 19:48:36 form self.form task=%E6%88%91%E6%98%AF%E4%BD%A0%E7%88%B8%E7%88%B8%E5%90%A7
+2019/02/27 19:48:36 Model new
+2019/02/27 19:48:36 Todo __init__ {'task': '我是你爸爸吧'}
+2019/02/27 19:48:36 Model all
+2019/02/27 19:48:36 Todo __init__ {'id': 1, 'task': '你好', 'completed': False, 'user_id': -1, 'created_time': 1551268113, 'updated_time': 1551268113}
+2019/02/27 19:48:36 HTTP/1.1 302 OK
+Content-Type: text/html
+Location: /todo
+
+
+2019/02/27 19:48:36 响应结束
+2019/02/27 19:48:36 
+
+完整请求 *******************************************************
+2019/02/27 19:48:36 GET /todo HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+
+2019/02/27 19:48:36 请求结束
+2019/02/27 19:48:36 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:48:36 path and query /todo {}
+2019/02/27 19:48:36 Model all
+2019/02/27 19:48:36 Todo __init__ {'id': 1, 'task': '你好', 'completed': False, 'user_id': -1, 'created_time': 1551268113, 'updated_time': 1551268113}
+2019/02/27 19:48:36 Todo __init__ {'id': 2, 'task': '我是你爸爸吧', 'completed': False, 'user_id': -1, 'created_time': 1551268116, 'updated_time': 1551268116}
+2019/02/27 19:48:36 template simple_todo_index.html {'todos': [< Todo
+id: (1)
+task: (你好)
+completed: (False)
+user_id: (-1)
+created_time: (1551268113)
+updated_time: (1551268113) 
+>
+, < Todo
+id: (2)
+task: (我是你爸爸吧)
+completed: (False)
+user_id: (-1)
+created_time: (1551268116)
+updated_time: (1551268116) 
+>
+]}
+2019/02/27 19:48:36 http_response None
+2019/02/27 19:48:36 http_response HTTP/1.1 200 OK
+Content-Type: text/html
+
+2019/02/27 19:48:36 HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo</title>
+</head>
+<body>
+    <form action="/todo/add" method="post">
+        <input name="task">
+        <button>add todo</button>
+    </form>
+
+    
+        <div>
+            1 : 你好   @ 19:48:33
+            <a href="/todo/edit?id=1">edit</a>
+            <a href="/todo/delete?id=1">删除</a>
+        </div>
+    
+        <div>
+            2 : 我是你爸爸吧   @ 19:48:36
+            <a href="/todo/edit?id=2">edit</a>
+            <a href="/todo/delete?id=2">删除</a>
+        </div>
+    
+</body>
+</html>
+2019/02/27 19:48:36 响应结束
+2019/02/27 19:48:40 
+
+完整请求 *******************************************************
+2019/02/27 19:48:40 POST /todo/add HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 50
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+task=%E6%88%91%E6%98%AF%E4%BD%A0%E5%93%A5%E5%93%A5
+2019/02/27 19:48:41 请求结束
+2019/02/27 19:48:41 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:48:41 path and query /todo/add {}
+2019/02/27 19:48:41 form self.form task=%E6%88%91%E6%98%AF%E4%BD%A0%E5%93%A5%E5%93%A5
+2019/02/27 19:48:41 Model new
+2019/02/27 19:48:41 Todo __init__ {'task': '我是你哥哥'}
+2019/02/27 19:48:41 Model all
+2019/02/27 19:48:41 Todo __init__ {'id': 1, 'task': '你好', 'completed': False, 'user_id': -1, 'created_time': 1551268113, 'updated_time': 1551268113}
+2019/02/27 19:48:41 Todo __init__ {'id': 2, 'task': '我是你爸爸吧', 'completed': False, 'user_id': -1, 'created_time': 1551268116, 'updated_time': 1551268116}
+2019/02/27 19:48:41 HTTP/1.1 302 OK
+Content-Type: text/html
+Location: /todo
+
+
+2019/02/27 19:48:41 响应结束
+2019/02/27 19:48:41 
+
+完整请求 *******************************************************
+2019/02/27 19:48:41 GET /todo HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+
+2019/02/27 19:48:41 请求结束
+2019/02/27 19:48:41 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:48:41 path and query /todo {}
+2019/02/27 19:48:41 Model all
+2019/02/27 19:48:41 Todo __init__ {'id': 1, 'task': '你好', 'completed': False, 'user_id': -1, 'created_time': 1551268113, 'updated_time': 1551268113}
+2019/02/27 19:48:41 Todo __init__ {'id': 2, 'task': '我是你爸爸吧', 'completed': False, 'user_id': -1, 'created_time': 1551268116, 'updated_time': 1551268116}
+2019/02/27 19:48:41 Todo __init__ {'id': 3, 'task': '我是你哥哥', 'completed': False, 'user_id': -1, 'created_time': 1551268121, 'updated_time': 1551268121}
+2019/02/27 19:48:41 template simple_todo_index.html {'todos': [< Todo
+id: (1)
+task: (你好)
+completed: (False)
+user_id: (-1)
+created_time: (1551268113)
+updated_time: (1551268113) 
+>
+, < Todo
+id: (2)
+task: (我是你爸爸吧)
+completed: (False)
+user_id: (-1)
+created_time: (1551268116)
+updated_time: (1551268116) 
+>
+, < Todo
+id: (3)
+task: (我是你哥哥)
+completed: (False)
+user_id: (-1)
+created_time: (1551268121)
+updated_time: (1551268121) 
+>
+]}
+2019/02/27 19:48:41 http_response None
+2019/02/27 19:48:41 http_response HTTP/1.1 200 OK
+Content-Type: text/html
+
+2019/02/27 19:48:41 HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo</title>
+</head>
+<body>
+    <form action="/todo/add" method="post">
+        <input name="task">
+        <button>add todo</button>
+    </form>
+
+    
+        <div>
+            1 : 你好   @ 19:48:33
+            <a href="/todo/edit?id=1">edit</a>
+            <a href="/todo/delete?id=1">删除</a>
+        </div>
+    
+        <div>
+            2 : 我是你爸爸吧   @ 19:48:36
+            <a href="/todo/edit?id=2">edit</a>
+            <a href="/todo/delete?id=2">删除</a>
+        </div>
+    
+        <div>
+            3 : 我是你哥哥   @ 19:48:41
+            <a href="/todo/edit?id=3">edit</a>
+            <a href="/todo/delete?id=3">删除</a>
+        </div>
+    
+</body>
+</html>
+2019/02/27 19:48:41 响应结束
+2019/02/27 19:48:46 
+
+完整请求 *******************************************************
+2019/02/27 19:48:46 POST /todo/add HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 68
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+task=%E6%88%91%E7%88%B1%E4%BD%A0%EF%BC%8C%E5%B0%8F%E4%BB%99%E5%A5%B3
+2019/02/27 19:48:46 请求结束
+2019/02/27 19:48:46 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:48:46 path and query /todo/add {}
+2019/02/27 19:48:46 form self.form task=%E6%88%91%E7%88%B1%E4%BD%A0%EF%BC%8C%E5%B0%8F%E4%BB%99%E5%A5%B3
+2019/02/27 19:48:46 Model new
+2019/02/27 19:48:46 Todo __init__ {'task': '我爱你，小仙女'}
+2019/02/27 19:48:46 Model all
+2019/02/27 19:48:46 Todo __init__ {'id': 1, 'task': '你好', 'completed': False, 'user_id': -1, 'created_time': 1551268113, 'updated_time': 1551268113}
+2019/02/27 19:48:46 Todo __init__ {'id': 2, 'task': '我是你爸爸吧', 'completed': False, 'user_id': -1, 'created_time': 1551268116, 'updated_time': 1551268116}
+2019/02/27 19:48:46 Todo __init__ {'id': 3, 'task': '我是你哥哥', 'completed': False, 'user_id': -1, 'created_time': 1551268121, 'updated_time': 1551268121}
+2019/02/27 19:48:46 HTTP/1.1 302 OK
+Content-Type: text/html
+Location: /todo
+
+
+2019/02/27 19:48:46 响应结束
+2019/02/27 19:48:46 
+
+完整请求 *******************************************************
+2019/02/27 19:48:46 GET /todo HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+
+2019/02/27 19:48:46 请求结束
+2019/02/27 19:48:46 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:48:46 path and query /todo {}
+2019/02/27 19:48:46 Model all
+2019/02/27 19:48:46 Todo __init__ {'id': 1, 'task': '你好', 'completed': False, 'user_id': -1, 'created_time': 1551268113, 'updated_time': 1551268113}
+2019/02/27 19:48:46 Todo __init__ {'id': 2, 'task': '我是你爸爸吧', 'completed': False, 'user_id': -1, 'created_time': 1551268116, 'updated_time': 1551268116}
+2019/02/27 19:48:46 Todo __init__ {'id': 3, 'task': '我是你哥哥', 'completed': False, 'user_id': -1, 'created_time': 1551268121, 'updated_time': 1551268121}
+2019/02/27 19:48:46 Todo __init__ {'id': 4, 'task': '我爱你，小仙女', 'completed': False, 'user_id': -1, 'created_time': 1551268126, 'updated_time': 1551268126}
+2019/02/27 19:48:46 template simple_todo_index.html {'todos': [< Todo
+id: (1)
+task: (你好)
+completed: (False)
+user_id: (-1)
+created_time: (1551268113)
+updated_time: (1551268113) 
+>
+, < Todo
+id: (2)
+task: (我是你爸爸吧)
+completed: (False)
+user_id: (-1)
+created_time: (1551268116)
+updated_time: (1551268116) 
+>
+, < Todo
+id: (3)
+task: (我是你哥哥)
+completed: (False)
+user_id: (-1)
+created_time: (1551268121)
+updated_time: (1551268121) 
+>
+, < Todo
+id: (4)
+task: (我爱你，小仙女)
+completed: (False)
+user_id: (-1)
+created_time: (1551268126)
+updated_time: (1551268126) 
+>
+]}
+2019/02/27 19:48:46 http_response None
+2019/02/27 19:48:46 http_response HTTP/1.1 200 OK
+Content-Type: text/html
+
+2019/02/27 19:48:46 HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo</title>
+</head>
+<body>
+    <form action="/todo/add" method="post">
+        <input name="task">
+        <button>add todo</button>
+    </form>
+
+    
+        <div>
+            1 : 你好   @ 19:48:33
+            <a href="/todo/edit?id=1">edit</a>
+            <a href="/todo/delete?id=1">删除</a>
+        </div>
+    
+        <div>
+            2 : 我是你爸爸吧   @ 19:48:36
+            <a href="/todo/edit?id=2">edit</a>
+            <a href="/todo/delete?id=2">删除</a>
+        </div>
+    
+        <div>
+            3 : 我是你哥哥   @ 19:48:41
+            <a href="/todo/edit?id=3">edit</a>
+            <a href="/todo/delete?id=3">删除</a>
+        </div>
+    
+        <div>
+            4 : 我爱你，小仙女   @ 19:48:46
+            <a href="/todo/edit?id=4">edit</a>
+            <a href="/todo/delete?id=4">删除</a>
+        </div>
+    
+</body>
+</html>
+2019/02/27 19:48:46 响应结束
+2019/02/27 19:48:50 
+
+完整请求 *******************************************************
+2019/02/27 19:48:50 POST /todo/add HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 32
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+task=%E4%B9%88%E4%B9%88%E5%93%92
+2019/02/27 19:48:50 请求结束
+2019/02/27 19:48:50 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:48:50 path and query /todo/add {}
+2019/02/27 19:48:51 form self.form task=%E4%B9%88%E4%B9%88%E5%93%92
+2019/02/27 19:48:51 Model new
+2019/02/27 19:48:51 Todo __init__ {'task': '么么哒'}
+2019/02/27 19:48:51 Model all
+2019/02/27 19:48:51 Todo __init__ {'id': 1, 'task': '你好', 'completed': False, 'user_id': -1, 'created_time': 1551268113, 'updated_time': 1551268113}
+2019/02/27 19:48:51 Todo __init__ {'id': 2, 'task': '我是你爸爸吧', 'completed': False, 'user_id': -1, 'created_time': 1551268116, 'updated_time': 1551268116}
+2019/02/27 19:48:51 Todo __init__ {'id': 3, 'task': '我是你哥哥', 'completed': False, 'user_id': -1, 'created_time': 1551268121, 'updated_time': 1551268121}
+2019/02/27 19:48:51 Todo __init__ {'id': 4, 'task': '我爱你，小仙女', 'completed': False, 'user_id': -1, 'created_time': 1551268126, 'updated_time': 1551268126}
+2019/02/27 19:48:51 HTTP/1.1 302 OK
+Content-Type: text/html
+Location: /todo
+
+
+2019/02/27 19:48:51 响应结束
+2019/02/27 19:48:51 
+
+完整请求 *******************************************************
+2019/02/27 19:48:51 GET /todo HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+
+2019/02/27 19:48:51 请求结束
+2019/02/27 19:48:51 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:48:51 path and query /todo {}
+2019/02/27 19:48:51 Model all
+2019/02/27 19:48:51 Todo __init__ {'id': 1, 'task': '你好', 'completed': False, 'user_id': -1, 'created_time': 1551268113, 'updated_time': 1551268113}
+2019/02/27 19:48:51 Todo __init__ {'id': 2, 'task': '我是你爸爸吧', 'completed': False, 'user_id': -1, 'created_time': 1551268116, 'updated_time': 1551268116}
+2019/02/27 19:48:51 Todo __init__ {'id': 3, 'task': '我是你哥哥', 'completed': False, 'user_id': -1, 'created_time': 1551268121, 'updated_time': 1551268121}
+2019/02/27 19:48:51 Todo __init__ {'id': 4, 'task': '我爱你，小仙女', 'completed': False, 'user_id': -1, 'created_time': 1551268126, 'updated_time': 1551268126}
+2019/02/27 19:48:51 Todo __init__ {'id': 5, 'task': '么么哒', 'completed': False, 'user_id': -1, 'created_time': 1551268131, 'updated_time': 1551268131}
+2019/02/27 19:48:51 template simple_todo_index.html {'todos': [< Todo
+id: (1)
+task: (你好)
+completed: (False)
+user_id: (-1)
+created_time: (1551268113)
+updated_time: (1551268113) 
+>
+, < Todo
+id: (2)
+task: (我是你爸爸吧)
+completed: (False)
+user_id: (-1)
+created_time: (1551268116)
+updated_time: (1551268116) 
+>
+, < Todo
+id: (3)
+task: (我是你哥哥)
+completed: (False)
+user_id: (-1)
+created_time: (1551268121)
+updated_time: (1551268121) 
+>
+, < Todo
+id: (4)
+task: (我爱你，小仙女)
+completed: (False)
+user_id: (-1)
+created_time: (1551268126)
+updated_time: (1551268126) 
+>
+, < Todo
+id: (5)
+task: (么么哒)
+completed: (False)
+user_id: (-1)
+created_time: (1551268131)
+updated_time: (1551268131) 
+>
+]}
+2019/02/27 19:48:51 http_response None
+2019/02/27 19:48:51 http_response HTTP/1.1 200 OK
+Content-Type: text/html
+
+2019/02/27 19:48:51 HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo</title>
+</head>
+<body>
+    <form action="/todo/add" method="post">
+        <input name="task">
+        <button>add todo</button>
+    </form>
+
+    
+        <div>
+            1 : 你好   @ 19:48:33
+            <a href="/todo/edit?id=1">edit</a>
+            <a href="/todo/delete?id=1">删除</a>
+        </div>
+    
+        <div>
+            2 : 我是你爸爸吧   @ 19:48:36
+            <a href="/todo/edit?id=2">edit</a>
+            <a href="/todo/delete?id=2">删除</a>
+        </div>
+    
+        <div>
+            3 : 我是你哥哥   @ 19:48:41
+            <a href="/todo/edit?id=3">edit</a>
+            <a href="/todo/delete?id=3">删除</a>
+        </div>
+    
+        <div>
+            4 : 我爱你，小仙女   @ 19:48:46
+            <a href="/todo/edit?id=4">edit</a>
+            <a href="/todo/delete?id=4">删除</a>
+        </div>
+    
+        <div>
+            5 : 么么哒   @ 19:48:51
+            <a href="/todo/edit?id=5">edit</a>
+            <a href="/todo/delete?id=5">删除</a>
+        </div>
+    
+</body>
+</html>
+2019/02/27 19:48:51 响应结束
+2019/02/27 19:48:54 
+
+完整请求 *******************************************************
+2019/02/27 19:48:54 POST /todo/add HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 5
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+task=
+2019/02/27 19:48:54 请求结束
+2019/02/27 19:48:54 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:48:54 path and query /todo/add {}
+2019/02/27 19:48:54 form self.form task=
+2019/02/27 19:48:54 Model new
+2019/02/27 19:48:54 Todo __init__ {'task': ''}
+2019/02/27 19:48:54 Model all
+2019/02/27 19:48:54 Todo __init__ {'id': 1, 'task': '你好', 'completed': False, 'user_id': -1, 'created_time': 1551268113, 'updated_time': 1551268113}
+2019/02/27 19:48:54 Todo __init__ {'id': 2, 'task': '我是你爸爸吧', 'completed': False, 'user_id': -1, 'created_time': 1551268116, 'updated_time': 1551268116}
+2019/02/27 19:48:54 Todo __init__ {'id': 3, 'task': '我是你哥哥', 'completed': False, 'user_id': -1, 'created_time': 1551268121, 'updated_time': 1551268121}
+2019/02/27 19:48:54 Todo __init__ {'id': 4, 'task': '我爱你，小仙女', 'completed': False, 'user_id': -1, 'created_time': 1551268126, 'updated_time': 1551268126}
+2019/02/27 19:48:54 Todo __init__ {'id': 5, 'task': '么么哒', 'completed': False, 'user_id': -1, 'created_time': 1551268131, 'updated_time': 1551268131}
+2019/02/27 19:48:54 HTTP/1.1 302 OK
+Content-Type: text/html
+Location: /todo
+
+
+2019/02/27 19:48:54 响应结束
+2019/02/27 19:48:54 
+
+完整请求 *******************************************************
+2019/02/27 19:48:54 GET /todo HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+
+2019/02/27 19:48:54 请求结束
+2019/02/27 19:48:54 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:48:54 path and query /todo {}
+2019/02/27 19:48:54 Model all
+2019/02/27 19:48:54 Todo __init__ {'id': 1, 'task': '你好', 'completed': False, 'user_id': -1, 'created_time': 1551268113, 'updated_time': 1551268113}
+2019/02/27 19:48:54 Todo __init__ {'id': 2, 'task': '我是你爸爸吧', 'completed': False, 'user_id': -1, 'created_time': 1551268116, 'updated_time': 1551268116}
+2019/02/27 19:48:54 Todo __init__ {'id': 3, 'task': '我是你哥哥', 'completed': False, 'user_id': -1, 'created_time': 1551268121, 'updated_time': 1551268121}
+2019/02/27 19:48:54 Todo __init__ {'id': 4, 'task': '我爱你，小仙女', 'completed': False, 'user_id': -1, 'created_time': 1551268126, 'updated_time': 1551268126}
+2019/02/27 19:48:54 Todo __init__ {'id': 5, 'task': '么么哒', 'completed': False, 'user_id': -1, 'created_time': 1551268131, 'updated_time': 1551268131}
+2019/02/27 19:48:54 Todo __init__ {'id': 6, 'task': '', 'completed': False, 'user_id': -1, 'created_time': 1551268134, 'updated_time': 1551268134}
+2019/02/27 19:48:54 template simple_todo_index.html {'todos': [< Todo
+id: (1)
+task: (你好)
+completed: (False)
+user_id: (-1)
+created_time: (1551268113)
+updated_time: (1551268113) 
+>
+, < Todo
+id: (2)
+task: (我是你爸爸吧)
+completed: (False)
+user_id: (-1)
+created_time: (1551268116)
+updated_time: (1551268116) 
+>
+, < Todo
+id: (3)
+task: (我是你哥哥)
+completed: (False)
+user_id: (-1)
+created_time: (1551268121)
+updated_time: (1551268121) 
+>
+, < Todo
+id: (4)
+task: (我爱你，小仙女)
+completed: (False)
+user_id: (-1)
+created_time: (1551268126)
+updated_time: (1551268126) 
+>
+, < Todo
+id: (5)
+task: (么么哒)
+completed: (False)
+user_id: (-1)
+created_time: (1551268131)
+updated_time: (1551268131) 
+>
+, < Todo
+id: (6)
+task: ()
+completed: (False)
+user_id: (-1)
+created_time: (1551268134)
+updated_time: (1551268134) 
+>
+]}
+2019/02/27 19:48:54 http_response None
+2019/02/27 19:48:54 http_response HTTP/1.1 200 OK
+Content-Type: text/html
+
+2019/02/27 19:48:54 HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo</title>
+</head>
+<body>
+    <form action="/todo/add" method="post">
+        <input name="task">
+        <button>add todo</button>
+    </form>
+
+    
+        <div>
+            1 : 你好   @ 19:48:33
+            <a href="/todo/edit?id=1">edit</a>
+            <a href="/todo/delete?id=1">删除</a>
+        </div>
+    
+        <div>
+            2 : 我是你爸爸吧   @ 19:48:36
+            <a href="/todo/edit?id=2">edit</a>
+            <a href="/todo/delete?id=2">删除</a>
+        </div>
+    
+        <div>
+            3 : 我是你哥哥   @ 19:48:41
+            <a href="/todo/edit?id=3">edit</a>
+            <a href="/todo/delete?id=3">删除</a>
+        </div>
+    
+        <div>
+            4 : 我爱你，小仙女   @ 19:48:46
+            <a href="/todo/edit?id=4">edit</a>
+            <a href="/todo/delete?id=4">删除</a>
+        </div>
+    
+        <div>
+            5 : 么么哒   @ 19:48:51
+            <a href="/todo/edit?id=5">edit</a>
+            <a href="/todo/delete?id=5">删除</a>
+        </div>
+    
+        <div>
+            6 :    @ 19:48:54
+            <a href="/todo/edit?id=6">edit</a>
+            <a href="/todo/delete?id=6">删除</a>
+        </div>
+    
+</body>
+</html>
+2019/02/27 19:48:54 响应结束
+2019/02/27 19:48:57 
+
+完整请求 *******************************************************
+2019/02/27 19:48:57 POST /todo/add HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 5
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+task=
+2019/02/27 19:48:57 请求结束
+2019/02/27 19:48:57 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:48:57 path and query /todo/add {}
+2019/02/27 19:48:57 form self.form task=
+2019/02/27 19:48:57 Model new
+2019/02/27 19:48:57 Todo __init__ {'task': ''}
+2019/02/27 19:48:57 Model all
+2019/02/27 19:48:57 Todo __init__ {'id': 1, 'task': '你好', 'completed': False, 'user_id': -1, 'created_time': 1551268113, 'updated_time': 1551268113}
+2019/02/27 19:48:57 Todo __init__ {'id': 2, 'task': '我是你爸爸吧', 'completed': False, 'user_id': -1, 'created_time': 1551268116, 'updated_time': 1551268116}
+2019/02/27 19:48:57 Todo __init__ {'id': 3, 'task': '我是你哥哥', 'completed': False, 'user_id': -1, 'created_time': 1551268121, 'updated_time': 1551268121}
+2019/02/27 19:48:57 Todo __init__ {'id': 4, 'task': '我爱你，小仙女', 'completed': False, 'user_id': -1, 'created_time': 1551268126, 'updated_time': 1551268126}
+2019/02/27 19:48:57 Todo __init__ {'id': 5, 'task': '么么哒', 'completed': False, 'user_id': -1, 'created_time': 1551268131, 'updated_time': 1551268131}
+2019/02/27 19:48:57 Todo __init__ {'id': 6, 'task': '', 'completed': False, 'user_id': -1, 'created_time': 1551268134, 'updated_time': 1551268134}
+2019/02/27 19:48:57 HTTP/1.1 302 OK
+Content-Type: text/html
+Location: /todo
+
+
+2019/02/27 19:48:57 响应结束
+2019/02/27 19:48:57 
+
+完整请求 *******************************************************
+2019/02/27 19:48:57 GET /todo HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+
+2019/02/27 19:48:57 请求结束
+2019/02/27 19:48:57 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:48:57 path and query /todo {}
+2019/02/27 19:48:57 Model all
+2019/02/27 19:48:57 Todo __init__ {'id': 1, 'task': '你好', 'completed': False, 'user_id': -1, 'created_time': 1551268113, 'updated_time': 1551268113}
+2019/02/27 19:48:57 Todo __init__ {'id': 2, 'task': '我是你爸爸吧', 'completed': False, 'user_id': -1, 'created_time': 1551268116, 'updated_time': 1551268116}
+2019/02/27 19:48:57 Todo __init__ {'id': 3, 'task': '我是你哥哥', 'completed': False, 'user_id': -1, 'created_time': 1551268121, 'updated_time': 1551268121}
+2019/02/27 19:48:57 Todo __init__ {'id': 4, 'task': '我爱你，小仙女', 'completed': False, 'user_id': -1, 'created_time': 1551268126, 'updated_time': 1551268126}
+2019/02/27 19:48:57 Todo __init__ {'id': 5, 'task': '么么哒', 'completed': False, 'user_id': -1, 'created_time': 1551268131, 'updated_time': 1551268131}
+2019/02/27 19:48:57 Todo __init__ {'id': 6, 'task': '', 'completed': False, 'user_id': -1, 'created_time': 1551268134, 'updated_time': 1551268134}
+2019/02/27 19:48:57 Todo __init__ {'id': 7, 'task': '', 'completed': False, 'user_id': -1, 'created_time': 1551268137, 'updated_time': 1551268137}
+2019/02/27 19:48:57 template simple_todo_index.html {'todos': [< Todo
+id: (1)
+task: (你好)
+completed: (False)
+user_id: (-1)
+created_time: (1551268113)
+updated_time: (1551268113) 
+>
+, < Todo
+id: (2)
+task: (我是你爸爸吧)
+completed: (False)
+user_id: (-1)
+created_time: (1551268116)
+updated_time: (1551268116) 
+>
+, < Todo
+id: (3)
+task: (我是你哥哥)
+completed: (False)
+user_id: (-1)
+created_time: (1551268121)
+updated_time: (1551268121) 
+>
+, < Todo
+id: (4)
+task: (我爱你，小仙女)
+completed: (False)
+user_id: (-1)
+created_time: (1551268126)
+updated_time: (1551268126) 
+>
+, < Todo
+id: (5)
+task: (么么哒)
+completed: (False)
+user_id: (-1)
+created_time: (1551268131)
+updated_time: (1551268131) 
+>
+, < Todo
+id: (6)
+task: ()
+completed: (False)
+user_id: (-1)
+created_time: (1551268134)
+updated_time: (1551268134) 
+>
+, < Todo
+id: (7)
+task: ()
+completed: (False)
+user_id: (-1)
+created_time: (1551268137)
+updated_time: (1551268137) 
+>
+]}
+2019/02/27 19:48:57 http_response None
+2019/02/27 19:48:57 http_response HTTP/1.1 200 OK
+Content-Type: text/html
+
+2019/02/27 19:48:57 HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo</title>
+</head>
+<body>
+    <form action="/todo/add" method="post">
+        <input name="task">
+        <button>add todo</button>
+    </form>
+
+    
+        <div>
+            1 : 你好   @ 19:48:33
+            <a href="/todo/edit?id=1">edit</a>
+            <a href="/todo/delete?id=1">删除</a>
+        </div>
+    
+        <div>
+            2 : 我是你爸爸吧   @ 19:48:36
+            <a href="/todo/edit?id=2">edit</a>
+            <a href="/todo/delete?id=2">删除</a>
+        </div>
+    
+        <div>
+            3 : 我是你哥哥   @ 19:48:41
+            <a href="/todo/edit?id=3">edit</a>
+            <a href="/todo/delete?id=3">删除</a>
+        </div>
+    
+        <div>
+            4 : 我爱你，小仙女   @ 19:48:46
+            <a href="/todo/edit?id=4">edit</a>
+            <a href="/todo/delete?id=4">删除</a>
+        </div>
+    
+        <div>
+            5 : 么么哒   @ 19:48:51
+            <a href="/todo/edit?id=5">edit</a>
+            <a href="/todo/delete?id=5">删除</a>
+        </div>
+    
+        <div>
+            6 :    @ 19:48:54
+            <a href="/todo/edit?id=6">edit</a>
+            <a href="/todo/delete?id=6">删除</a>
+        </div>
+    
+        <div>
+            7 :    @ 19:48:57
+            <a href="/todo/edit?id=7">edit</a>
+            <a href="/todo/delete?id=7">删除</a>
+        </div>
+    
+</body>
+</html>
+2019/02/27 19:48:57 响应结束
+2019/02/27 19:48:58 
+
+完整请求 *******************************************************
+2019/02/27 19:48:58 GET /todo/edit?id=3 HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+
+2019/02/27 19:48:58 请求结束
+2019/02/27 19:48:58 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:48:58 path and query /todo/edit {'id': '3'}
+2019/02/27 19:48:58 Model all
+2019/02/27 19:48:58 Todo __init__ {'id': 1, 'task': '你好', 'completed': False, 'user_id': -1, 'created_time': 1551268113, 'updated_time': 1551268113}
+2019/02/27 19:48:58 Todo __init__ {'id': 2, 'task': '我是你爸爸吧', 'completed': False, 'user_id': -1, 'created_time': 1551268116, 'updated_time': 1551268116}
+2019/02/27 19:48:58 Todo __init__ {'id': 3, 'task': '我是你哥哥', 'completed': False, 'user_id': -1, 'created_time': 1551268121, 'updated_time': 1551268121}
+2019/02/27 19:48:58 Todo __init__ {'id': 4, 'task': '我爱你，小仙女', 'completed': False, 'user_id': -1, 'created_time': 1551268126, 'updated_time': 1551268126}
+2019/02/27 19:48:58 Todo __init__ {'id': 5, 'task': '么么哒', 'completed': False, 'user_id': -1, 'created_time': 1551268131, 'updated_time': 1551268131}
+2019/02/27 19:48:58 Todo __init__ {'id': 6, 'task': '', 'completed': False, 'user_id': -1, 'created_time': 1551268134, 'updated_time': 1551268134}
+2019/02/27 19:48:58 Todo __init__ {'id': 7, 'task': '', 'completed': False, 'user_id': -1, 'created_time': 1551268137, 'updated_time': 1551268137}
+2019/02/27 19:48:58 debug EDIT < Todo
+id: (3)
+task: (我是你哥哥)
+completed: (False)
+user_id: (-1)
+created_time: (1551268121)
+updated_time: (1551268121) 
+>
+
+2019/02/27 19:48:59 template simple_todo_edit.html {'todo': < Todo
+id: (3)
+task: (我是你哥哥)
+completed: (False)
+user_id: (-1)
+created_time: (1551268121)
+updated_time: (1551268121) 
+>
+}
+2019/02/27 19:48:59 http_response None
+2019/02/27 19:48:59 http_response HTTP/1.1 200 OK
+Content-Type: text/html
+
+2019/02/27 19:48:59 HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo edit</title>
+</head>
+<body>
+    <form action="/todo/update?id=3" method="post">
+        <input name="task" value="我是你哥哥">
+        <button>update todo</button>
+    </form>
+</body>
+</html>
+2019/02/27 19:48:59 响应结束
+2019/02/27 19:48:59 
+
+完整请求 *******************************************************
+2019/02/27 19:49:00 POST /todo/update?id=3 HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo/edit?id=3
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 59
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+task=%E6%88%91%E6%98%AF%E4%BD%A0%E5%93%A5%E5%93%A5a%27s%27d
+2019/02/27 19:49:00 请求结束
+2019/02/27 19:49:00 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:49:00 path and query /todo/update {'id': '3'}
+2019/02/27 19:49:00 form self.form task=%E6%88%91%E6%98%AF%E4%BD%A0%E5%93%A5%E5%93%A5a%27s%27d
+2019/02/27 19:49:00 Model all
+2019/02/27 19:49:00 Todo __init__ {'id': 1, 'task': '你好', 'completed': False, 'user_id': -1, 'created_time': 1551268113, 'updated_time': 1551268113}
+2019/02/27 19:49:00 Todo __init__ {'id': 2, 'task': '我是你爸爸吧', 'completed': False, 'user_id': -1, 'created_time': 1551268116, 'updated_time': 1551268116}
+2019/02/27 19:49:00 Todo __init__ {'id': 3, 'task': '我是你哥哥', 'completed': False, 'user_id': -1, 'created_time': 1551268121, 'updated_time': 1551268121}
+2019/02/27 19:49:00 Todo __init__ {'id': 4, 'task': '我爱你，小仙女', 'completed': False, 'user_id': -1, 'created_time': 1551268126, 'updated_time': 1551268126}
+2019/02/27 19:49:00 Todo __init__ {'id': 5, 'task': '么么哒', 'completed': False, 'user_id': -1, 'created_time': 1551268131, 'updated_time': 1551268131}
+2019/02/27 19:49:00 Todo __init__ {'id': 6, 'task': '', 'completed': False, 'user_id': -1, 'created_time': 1551268134, 'updated_time': 1551268134}
+2019/02/27 19:49:00 Todo __init__ {'id': 7, 'task': '', 'completed': False, 'user_id': -1, 'created_time': 1551268137, 'updated_time': 1551268137}
+2019/02/27 19:49:00 classmethod update-model < Todo
+id: (3)
+task: (我是你哥哥)
+completed: (False)
+user_id: (-1)
+created_time: (1551268121)
+updated_time: (1551268121) 
+>
+
+2019/02/27 19:49:00 update****** {'task': "我是你哥哥a's'd"}
+2019/02/27 19:49:00 Todo update <class 'models.Todo'>
+2019/02/27 19:49:00 Model all
+2019/02/27 19:49:00 Todo __init__ {'id': 1, 'task': '你好', 'completed': False, 'user_id': -1, 'created_time': 1551268113, 'updated_time': 1551268113}
+2019/02/27 19:49:00 Todo __init__ {'id': 2, 'task': '我是你爸爸吧', 'completed': False, 'user_id': -1, 'created_time': 1551268116, 'updated_time': 1551268116}
+2019/02/27 19:49:00 Todo __init__ {'id': 3, 'task': '我是你哥哥', 'completed': False, 'user_id': -1, 'created_time': 1551268121, 'updated_time': 1551268121}
+2019/02/27 19:49:00 Todo __init__ {'id': 4, 'task': '我爱你，小仙女', 'completed': False, 'user_id': -1, 'created_time': 1551268126, 'updated_time': 1551268126}
+2019/02/27 19:49:00 Todo __init__ {'id': 5, 'task': '么么哒', 'completed': False, 'user_id': -1, 'created_time': 1551268131, 'updated_time': 1551268131}
+2019/02/27 19:49:00 Todo __init__ {'id': 6, 'task': '', 'completed': False, 'user_id': -1, 'created_time': 1551268134, 'updated_time': 1551268134}
+2019/02/27 19:49:00 Todo __init__ {'id': 7, 'task': '', 'completed': False, 'user_id': -1, 'created_time': 1551268137, 'updated_time': 1551268137}
+2019/02/27 19:49:00 debug 2
+2019/02/27 19:49:00 HTTP/1.1 302 OK
+Content-Type: text/html
+Location: /todo
+
+
+2019/02/27 19:49:00 响应结束
+2019/02/27 19:49:00 
+
+完整请求 *******************************************************
+2019/02/27 19:49:00 GET /todo HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo/edit?id=3
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+
+2019/02/27 19:49:00 请求结束
+2019/02/27 19:49:00 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:49:00 path and query /todo {}
+2019/02/27 19:49:00 Model all
+2019/02/27 19:49:00 Todo __init__ {'id': 1, 'task': '你好', 'completed': False, 'user_id': -1, 'created_time': 1551268113, 'updated_time': 1551268113}
+2019/02/27 19:49:00 Todo __init__ {'id': 2, 'task': '我是你爸爸吧', 'completed': False, 'user_id': -1, 'created_time': 1551268116, 'updated_time': 1551268116}
+2019/02/27 19:49:00 Todo __init__ {'id': 3, 'task': "我是你哥哥a's'd", 'completed': False, 'user_id': -1, 'created_time': 1551268121, 'updated_time': 1551268140}
+2019/02/27 19:49:00 Todo __init__ {'id': 4, 'task': '我爱你，小仙女', 'completed': False, 'user_id': -1, 'created_time': 1551268126, 'updated_time': 1551268126}
+2019/02/27 19:49:00 Todo __init__ {'id': 5, 'task': '么么哒', 'completed': False, 'user_id': -1, 'created_time': 1551268131, 'updated_time': 1551268131}
+2019/02/27 19:49:00 Todo __init__ {'id': 6, 'task': '', 'completed': False, 'user_id': -1, 'created_time': 1551268134, 'updated_time': 1551268134}
+2019/02/27 19:49:00 Todo __init__ {'id': 7, 'task': '', 'completed': False, 'user_id': -1, 'created_time': 1551268137, 'updated_time': 1551268137}
+2019/02/27 19:49:00 template simple_todo_index.html {'todos': [< Todo
+id: (1)
+task: (你好)
+completed: (False)
+user_id: (-1)
+created_time: (1551268113)
+updated_time: (1551268113) 
+>
+, < Todo
+id: (2)
+task: (我是你爸爸吧)
+completed: (False)
+user_id: (-1)
+created_time: (1551268116)
+updated_time: (1551268116) 
+>
+, < Todo
+id: (3)
+task: (我是你哥哥a's'd)
+completed: (False)
+user_id: (-1)
+created_time: (1551268121)
+updated_time: (1551268140) 
+>
+, < Todo
+id: (4)
+task: (我爱你，小仙女)
+completed: (False)
+user_id: (-1)
+created_time: (1551268126)
+updated_time: (1551268126) 
+>
+, < Todo
+id: (5)
+task: (么么哒)
+completed: (False)
+user_id: (-1)
+created_time: (1551268131)
+updated_time: (1551268131) 
+>
+, < Todo
+id: (6)
+task: ()
+completed: (False)
+user_id: (-1)
+created_time: (1551268134)
+updated_time: (1551268134) 
+>
+, < Todo
+id: (7)
+task: ()
+completed: (False)
+user_id: (-1)
+created_time: (1551268137)
+updated_time: (1551268137) 
+>
+]}
+2019/02/27 19:49:00 http_response None
+2019/02/27 19:49:00 http_response HTTP/1.1 200 OK
+Content-Type: text/html
+
+2019/02/27 19:49:00 HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo</title>
+</head>
+<body>
+    <form action="/todo/add" method="post">
+        <input name="task">
+        <button>add todo</button>
+    </form>
+
+    
+        <div>
+            1 : 你好   @ 19:48:33
+            <a href="/todo/edit?id=1">edit</a>
+            <a href="/todo/delete?id=1">删除</a>
+        </div>
+    
+        <div>
+            2 : 我是你爸爸吧   @ 19:48:36
+            <a href="/todo/edit?id=2">edit</a>
+            <a href="/todo/delete?id=2">删除</a>
+        </div>
+    
+        <div>
+            3 : 我是你哥哥a's'd   @ 19:49:00
+            <a href="/todo/edit?id=3">edit</a>
+            <a href="/todo/delete?id=3">删除</a>
+        </div>
+    
+        <div>
+            4 : 我爱你，小仙女   @ 19:48:46
+            <a href="/todo/edit?id=4">edit</a>
+            <a href="/todo/delete?id=4">删除</a>
+        </div>
+    
+        <div>
+            5 : 么么哒   @ 19:48:51
+            <a href="/todo/edit?id=5">edit</a>
+            <a href="/todo/delete?id=5">删除</a>
+        </div>
+    
+        <div>
+            6 :    @ 19:48:54
+            <a href="/todo/edit?id=6">edit</a>
+            <a href="/todo/delete?id=6">删除</a>
+        </div>
+    
+        <div>
+            7 :    @ 19:48:57
+            <a href="/todo/edit?id=7">edit</a>
+            <a href="/todo/delete?id=7">删除</a>
+        </div>
+    
+</body>
+</html>
+2019/02/27 19:49:00 响应结束
+2019/02/27 19:49:03 
+
+完整请求 *******************************************************
+2019/02/27 19:49:03 GET /todo/edit?id=5 HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+
+2019/02/27 19:49:03 请求结束
+2019/02/27 19:49:03 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:49:03 path and query /todo/edit {'id': '5'}
+2019/02/27 19:49:03 Model all
+2019/02/27 19:49:03 Todo __init__ {'id': 1, 'task': '你好', 'completed': False, 'user_id': -1, 'created_time': 1551268113, 'updated_time': 1551268113}
+2019/02/27 19:49:03 Todo __init__ {'id': 2, 'task': '我是你爸爸吧', 'completed': False, 'user_id': -1, 'created_time': 1551268116, 'updated_time': 1551268116}
+2019/02/27 19:49:03 Todo __init__ {'id': 3, 'task': "我是你哥哥a's'd", 'completed': False, 'user_id': -1, 'created_time': 1551268121, 'updated_time': 1551268140}
+2019/02/27 19:49:03 Todo __init__ {'id': 4, 'task': '我爱你，小仙女', 'completed': False, 'user_id': -1, 'created_time': 1551268126, 'updated_time': 1551268126}
+2019/02/27 19:49:03 Todo __init__ {'id': 5, 'task': '么么哒', 'completed': False, 'user_id': -1, 'created_time': 1551268131, 'updated_time': 1551268131}
+2019/02/27 19:49:03 Todo __init__ {'id': 6, 'task': '', 'completed': False, 'user_id': -1, 'created_time': 1551268134, 'updated_time': 1551268134}
+2019/02/27 19:49:03 Todo __init__ {'id': 7, 'task': '', 'completed': False, 'user_id': -1, 'created_time': 1551268137, 'updated_time': 1551268137}
+2019/02/27 19:49:03 debug EDIT < Todo
+id: (5)
+task: (么么哒)
+completed: (False)
+user_id: (-1)
+created_time: (1551268131)
+updated_time: (1551268131) 
+>
+
+2019/02/27 19:49:03 template simple_todo_edit.html {'todo': < Todo
+id: (5)
+task: (么么哒)
+completed: (False)
+user_id: (-1)
+created_time: (1551268131)
+updated_time: (1551268131) 
+>
+}
+2019/02/27 19:49:03 http_response None
+2019/02/27 19:49:03 http_response HTTP/1.1 200 OK
+Content-Type: text/html
+
+2019/02/27 19:49:03 HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo edit</title>
+</head>
+<body>
+    <form action="/todo/update?id=5" method="post">
+        <input name="task" value="么么哒">
+        <button>update todo</button>
+    </form>
+</body>
+</html>
+2019/02/27 19:49:03 响应结束
+2019/02/27 19:49:05 
+
+完整请求 *******************************************************
+2019/02/27 19:49:05 POST /todo/update?id=5 HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo/edit?id=5
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 45
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+task=%E4%B9%88%E4%B9%88%E5%93%92a%27s%27d%27f
+2019/02/27 19:49:05 请求结束
+2019/02/27 19:49:05 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:49:05 path and query /todo/update {'id': '5'}
+2019/02/27 19:49:05 form self.form task=%E4%B9%88%E4%B9%88%E5%93%92a%27s%27d%27f
+2019/02/27 19:49:05 Model all
+2019/02/27 19:49:05 Todo __init__ {'id': 1, 'task': '你好', 'completed': False, 'user_id': -1, 'created_time': 1551268113, 'updated_time': 1551268113}
+2019/02/27 19:49:05 Todo __init__ {'id': 2, 'task': '我是你爸爸吧', 'completed': False, 'user_id': -1, 'created_time': 1551268116, 'updated_time': 1551268116}
+2019/02/27 19:49:05 Todo __init__ {'id': 3, 'task': "我是你哥哥a's'd", 'completed': False, 'user_id': -1, 'created_time': 1551268121, 'updated_time': 1551268140}
+2019/02/27 19:49:05 Todo __init__ {'id': 4, 'task': '我爱你，小仙女', 'completed': False, 'user_id': -1, 'created_time': 1551268126, 'updated_time': 1551268126}
+2019/02/27 19:49:05 Todo __init__ {'id': 5, 'task': '么么哒', 'completed': False, 'user_id': -1, 'created_time': 1551268131, 'updated_time': 1551268131}
+2019/02/27 19:49:05 Todo __init__ {'id': 6, 'task': '', 'completed': False, 'user_id': -1, 'created_time': 1551268134, 'updated_time': 1551268134}
+2019/02/27 19:49:05 Todo __init__ {'id': 7, 'task': '', 'completed': False, 'user_id': -1, 'created_time': 1551268137, 'updated_time': 1551268137}
+2019/02/27 19:49:05 classmethod update-model < Todo
+id: (5)
+task: (么么哒)
+completed: (False)
+user_id: (-1)
+created_time: (1551268131)
+updated_time: (1551268131) 
+>
+
+2019/02/27 19:49:05 update****** {'task': "么么哒a's'd'f"}
+2019/02/27 19:49:05 Todo update <class 'models.Todo'>
+2019/02/27 19:49:05 Model all
+2019/02/27 19:49:05 Todo __init__ {'id': 1, 'task': '你好', 'completed': False, 'user_id': -1, 'created_time': 1551268113, 'updated_time': 1551268113}
+2019/02/27 19:49:05 Todo __init__ {'id': 2, 'task': '我是你爸爸吧', 'completed': False, 'user_id': -1, 'created_time': 1551268116, 'updated_time': 1551268116}
+2019/02/27 19:49:05 Todo __init__ {'id': 3, 'task': "我是你哥哥a's'd", 'completed': False, 'user_id': -1, 'created_time': 1551268121, 'updated_time': 1551268140}
+2019/02/27 19:49:05 Todo __init__ {'id': 4, 'task': '我爱你，小仙女', 'completed': False, 'user_id': -1, 'created_time': 1551268126, 'updated_time': 1551268126}
+2019/02/27 19:49:05 Todo __init__ {'id': 5, 'task': '么么哒', 'completed': False, 'user_id': -1, 'created_time': 1551268131, 'updated_time': 1551268131}
+2019/02/27 19:49:05 Todo __init__ {'id': 6, 'task': '', 'completed': False, 'user_id': -1, 'created_time': 1551268134, 'updated_time': 1551268134}
+2019/02/27 19:49:05 Todo __init__ {'id': 7, 'task': '', 'completed': False, 'user_id': -1, 'created_time': 1551268137, 'updated_time': 1551268137}
+2019/02/27 19:49:05 debug 4
+2019/02/27 19:49:05 HTTP/1.1 302 OK
+Content-Type: text/html
+Location: /todo
+
+
+2019/02/27 19:49:05 响应结束
+2019/02/27 19:49:05 
+
+完整请求 *******************************************************
+2019/02/27 19:49:05 GET /todo HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo/edit?id=5
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+
+2019/02/27 19:49:05 请求结束
+2019/02/27 19:49:05 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:49:05 path and query /todo {}
+2019/02/27 19:49:05 Model all
+2019/02/27 19:49:05 Todo __init__ {'id': 1, 'task': '你好', 'completed': False, 'user_id': -1, 'created_time': 1551268113, 'updated_time': 1551268113}
+2019/02/27 19:49:05 Todo __init__ {'id': 2, 'task': '我是你爸爸吧', 'completed': False, 'user_id': -1, 'created_time': 1551268116, 'updated_time': 1551268116}
+2019/02/27 19:49:05 Todo __init__ {'id': 3, 'task': "我是你哥哥a's'd", 'completed': False, 'user_id': -1, 'created_time': 1551268121, 'updated_time': 1551268140}
+2019/02/27 19:49:06 Todo __init__ {'id': 4, 'task': '我爱你，小仙女', 'completed': False, 'user_id': -1, 'created_time': 1551268126, 'updated_time': 1551268126}
+2019/02/27 19:49:06 Todo __init__ {'id': 5, 'task': "么么哒a's'd'f", 'completed': False, 'user_id': -1, 'created_time': 1551268131, 'updated_time': 1551268145}
+2019/02/27 19:49:06 Todo __init__ {'id': 6, 'task': '', 'completed': False, 'user_id': -1, 'created_time': 1551268134, 'updated_time': 1551268134}
+2019/02/27 19:49:06 Todo __init__ {'id': 7, 'task': '', 'completed': False, 'user_id': -1, 'created_time': 1551268137, 'updated_time': 1551268137}
+2019/02/27 19:49:06 template simple_todo_index.html {'todos': [< Todo
+id: (1)
+task: (你好)
+completed: (False)
+user_id: (-1)
+created_time: (1551268113)
+updated_time: (1551268113) 
+>
+, < Todo
+id: (2)
+task: (我是你爸爸吧)
+completed: (False)
+user_id: (-1)
+created_time: (1551268116)
+updated_time: (1551268116) 
+>
+, < Todo
+id: (3)
+task: (我是你哥哥a's'd)
+completed: (False)
+user_id: (-1)
+created_time: (1551268121)
+updated_time: (1551268140) 
+>
+, < Todo
+id: (4)
+task: (我爱你，小仙女)
+completed: (False)
+user_id: (-1)
+created_time: (1551268126)
+updated_time: (1551268126) 
+>
+, < Todo
+id: (5)
+task: (么么哒a's'd'f)
+completed: (False)
+user_id: (-1)
+created_time: (1551268131)
+updated_time: (1551268145) 
+>
+, < Todo
+id: (6)
+task: ()
+completed: (False)
+user_id: (-1)
+created_time: (1551268134)
+updated_time: (1551268134) 
+>
+, < Todo
+id: (7)
+task: ()
+completed: (False)
+user_id: (-1)
+created_time: (1551268137)
+updated_time: (1551268137) 
+>
+]}
+2019/02/27 19:49:06 http_response None
+2019/02/27 19:49:06 http_response HTTP/1.1 200 OK
+Content-Type: text/html
+
+2019/02/27 19:49:06 HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo</title>
+</head>
+<body>
+    <form action="/todo/add" method="post">
+        <input name="task">
+        <button>add todo</button>
+    </form>
+
+    
+        <div>
+            1 : 你好   @ 19:48:33
+            <a href="/todo/edit?id=1">edit</a>
+            <a href="/todo/delete?id=1">删除</a>
+        </div>
+    
+        <div>
+            2 : 我是你爸爸吧   @ 19:48:36
+            <a href="/todo/edit?id=2">edit</a>
+            <a href="/todo/delete?id=2">删除</a>
+        </div>
+    
+        <div>
+            3 : 我是你哥哥a's'd   @ 19:49:00
+            <a href="/todo/edit?id=3">edit</a>
+            <a href="/todo/delete?id=3">删除</a>
+        </div>
+    
+        <div>
+            4 : 我爱你，小仙女   @ 19:48:46
+            <a href="/todo/edit?id=4">edit</a>
+            <a href="/todo/delete?id=4">删除</a>
+        </div>
+    
+        <div>
+            5 : 么么哒a's'd'f   @ 19:49:05
+            <a href="/todo/edit?id=5">edit</a>
+            <a href="/todo/delete?id=5">删除</a>
+        </div>
+    
+        <div>
+            6 :    @ 19:48:54
+            <a href="/todo/edit?id=6">edit</a>
+            <a href="/todo/delete?id=6">删除</a>
+        </div>
+    
+        <div>
+            7 :    @ 19:48:57
+            <a href="/todo/edit?id=7">edit</a>
+            <a href="/todo/delete?id=7">删除</a>
+        </div>
+    
+</body>
+</html>
+2019/02/27 19:49:06 响应结束
+2019/02/27 19:49:07 
+
+完整请求 *******************************************************
+2019/02/27 19:49:07 GET /todo/edit?id=6 HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+
+2019/02/27 19:49:07 请求结束
+2019/02/27 19:49:07 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:49:07 path and query /todo/edit {'id': '6'}
+2019/02/27 19:49:07 Model all
+2019/02/27 19:49:07 Todo __init__ {'id': 1, 'task': '你好', 'completed': False, 'user_id': -1, 'created_time': 1551268113, 'updated_time': 1551268113}
+2019/02/27 19:49:07 Todo __init__ {'id': 2, 'task': '我是你爸爸吧', 'completed': False, 'user_id': -1, 'created_time': 1551268116, 'updated_time': 1551268116}
+2019/02/27 19:49:07 Todo __init__ {'id': 3, 'task': "我是你哥哥a's'd", 'completed': False, 'user_id': -1, 'created_time': 1551268121, 'updated_time': 1551268140}
+2019/02/27 19:49:07 Todo __init__ {'id': 4, 'task': '我爱你，小仙女', 'completed': False, 'user_id': -1, 'created_time': 1551268126, 'updated_time': 1551268126}
+2019/02/27 19:49:07 Todo __init__ {'id': 5, 'task': "么么哒a's'd'f", 'completed': False, 'user_id': -1, 'created_time': 1551268131, 'updated_time': 1551268145}
+2019/02/27 19:49:07 Todo __init__ {'id': 6, 'task': '', 'completed': False, 'user_id': -1, 'created_time': 1551268134, 'updated_time': 1551268134}
+2019/02/27 19:49:07 Todo __init__ {'id': 7, 'task': '', 'completed': False, 'user_id': -1, 'created_time': 1551268137, 'updated_time': 1551268137}
+2019/02/27 19:49:07 debug EDIT < Todo
+id: (6)
+task: ()
+completed: (False)
+user_id: (-1)
+created_time: (1551268134)
+updated_time: (1551268134) 
+>
+
+2019/02/27 19:49:07 template simple_todo_edit.html {'todo': < Todo
+id: (6)
+task: ()
+completed: (False)
+user_id: (-1)
+created_time: (1551268134)
+updated_time: (1551268134) 
+>
+}
+2019/02/27 19:49:07 http_response None
+2019/02/27 19:49:07 http_response HTTP/1.1 200 OK
+Content-Type: text/html
+
+2019/02/27 19:49:07 HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo edit</title>
+</head>
+<body>
+    <form action="/todo/update?id=6" method="post">
+        <input name="task" value="">
+        <button>update todo</button>
+    </form>
+</body>
+</html>
+2019/02/27 19:49:07 响应结束
+2019/02/27 19:49:09 
+
+完整请求 *******************************************************
+2019/02/27 19:49:09 POST /todo/update?id=6 HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo/edit?id=6
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 23
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+task=s%27da%27f%27s%27d
+2019/02/27 19:49:09 请求结束
+2019/02/27 19:49:09 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:49:09 path and query /todo/update {'id': '6'}
+2019/02/27 19:49:09 form self.form task=s%27da%27f%27s%27d
+2019/02/27 19:49:09 Model all
+2019/02/27 19:49:09 Todo __init__ {'id': 1, 'task': '你好', 'completed': False, 'user_id': -1, 'created_time': 1551268113, 'updated_time': 1551268113}
+2019/02/27 19:49:09 Todo __init__ {'id': 2, 'task': '我是你爸爸吧', 'completed': False, 'user_id': -1, 'created_time': 1551268116, 'updated_time': 1551268116}
+2019/02/27 19:49:09 Todo __init__ {'id': 3, 'task': "我是你哥哥a's'd", 'completed': False, 'user_id': -1, 'created_time': 1551268121, 'updated_time': 1551268140}
+2019/02/27 19:49:09 Todo __init__ {'id': 4, 'task': '我爱你，小仙女', 'completed': False, 'user_id': -1, 'created_time': 1551268126, 'updated_time': 1551268126}
+2019/02/27 19:49:09 Todo __init__ {'id': 5, 'task': "么么哒a's'd'f", 'completed': False, 'user_id': -1, 'created_time': 1551268131, 'updated_time': 1551268145}
+2019/02/27 19:49:09 Todo __init__ {'id': 6, 'task': '', 'completed': False, 'user_id': -1, 'created_time': 1551268134, 'updated_time': 1551268134}
+2019/02/27 19:49:09 Todo __init__ {'id': 7, 'task': '', 'completed': False, 'user_id': -1, 'created_time': 1551268137, 'updated_time': 1551268137}
+2019/02/27 19:49:09 classmethod update-model < Todo
+id: (6)
+task: ()
+completed: (False)
+user_id: (-1)
+created_time: (1551268134)
+updated_time: (1551268134) 
+>
+
+2019/02/27 19:49:09 update****** {'task': "s'da'f's'd"}
+2019/02/27 19:49:09 Todo update <class 'models.Todo'>
+2019/02/27 19:49:09 Model all
+2019/02/27 19:49:09 Todo __init__ {'id': 1, 'task': '你好', 'completed': False, 'user_id': -1, 'created_time': 1551268113, 'updated_time': 1551268113}
+2019/02/27 19:49:09 Todo __init__ {'id': 2, 'task': '我是你爸爸吧', 'completed': False, 'user_id': -1, 'created_time': 1551268116, 'updated_time': 1551268116}
+2019/02/27 19:49:09 Todo __init__ {'id': 3, 'task': "我是你哥哥a's'd", 'completed': False, 'user_id': -1, 'created_time': 1551268121, 'updated_time': 1551268140}
+2019/02/27 19:49:09 Todo __init__ {'id': 4, 'task': '我爱你，小仙女', 'completed': False, 'user_id': -1, 'created_time': 1551268126, 'updated_time': 1551268126}
+2019/02/27 19:49:09 Todo __init__ {'id': 5, 'task': "么么哒a's'd'f", 'completed': False, 'user_id': -1, 'created_time': 1551268131, 'updated_time': 1551268145}
+2019/02/27 19:49:09 Todo __init__ {'id': 6, 'task': '', 'completed': False, 'user_id': -1, 'created_time': 1551268134, 'updated_time': 1551268134}
+2019/02/27 19:49:09 Todo __init__ {'id': 7, 'task': '', 'completed': False, 'user_id': -1, 'created_time': 1551268137, 'updated_time': 1551268137}
+2019/02/27 19:49:10 debug 5
+2019/02/27 19:49:10 HTTP/1.1 302 OK
+Content-Type: text/html
+Location: /todo
+
+
+2019/02/27 19:49:10 响应结束
+2019/02/27 19:49:10 
+
+完整请求 *******************************************************
+2019/02/27 19:49:10 GET /todo HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo/edit?id=6
+Connection: keep-alive
+Cookie: user=3wculKngixm1f3hC
+Upgrade-Insecure-Requests: 1
+
+
+2019/02/27 19:49:10 请求结束
+2019/02/27 19:49:10 cookie ['user=3wculKngixm1f3hC']
+2019/02/27 19:49:10 path and query /todo {}
+2019/02/27 19:49:10 Model all
+2019/02/27 19:49:10 Todo __init__ {'id': 1, 'task': '你好', 'completed': False, 'user_id': -1, 'created_time': 1551268113, 'updated_time': 1551268113}
+2019/02/27 19:49:10 Todo __init__ {'id': 2, 'task': '我是你爸爸吧', 'completed': False, 'user_id': -1, 'created_time': 1551268116, 'updated_time': 1551268116}
+2019/02/27 19:49:10 Todo __init__ {'id': 3, 'task': "我是你哥哥a's'd", 'completed': False, 'user_id': -1, 'created_time': 1551268121, 'updated_time': 1551268140}
+2019/02/27 19:49:10 Todo __init__ {'id': 4, 'task': '我爱你，小仙女', 'completed': False, 'user_id': -1, 'created_time': 1551268126, 'updated_time': 1551268126}
+2019/02/27 19:49:10 Todo __init__ {'id': 5, 'task': "么么哒a's'd'f", 'completed': False, 'user_id': -1, 'created_time': 1551268131, 'updated_time': 1551268145}
+2019/02/27 19:49:10 Todo __init__ {'id': 6, 'task': "s'da'f's'd", 'completed': False, 'user_id': -1, 'created_time': 1551268134, 'updated_time': 1551268149}
+2019/02/27 19:49:10 Todo __init__ {'id': 7, 'task': '', 'completed': False, 'user_id': -1, 'created_time': 1551268137, 'updated_time': 1551268137}
+2019/02/27 19:49:10 template simple_todo_index.html {'todos': [< Todo
+id: (1)
+task: (你好)
+completed: (False)
+user_id: (-1)
+created_time: (1551268113)
+updated_time: (1551268113) 
+>
+, < Todo
+id: (2)
+task: (我是你爸爸吧)
+completed: (False)
+user_id: (-1)
+created_time: (1551268116)
+updated_time: (1551268116) 
+>
+, < Todo
+id: (3)
+task: (我是你哥哥a's'd)
+completed: (False)
+user_id: (-1)
+created_time: (1551268121)
+updated_time: (1551268140) 
+>
+, < Todo
+id: (4)
+task: (我爱你，小仙女)
+completed: (False)
+user_id: (-1)
+created_time: (1551268126)
+updated_time: (1551268126) 
+>
+, < Todo
+id: (5)
+task: (么么哒a's'd'f)
+completed: (False)
+user_id: (-1)
+created_time: (1551268131)
+updated_time: (1551268145) 
+>
+, < Todo
+id: (6)
+task: (s'da'f's'd)
+completed: (False)
+user_id: (-1)
+created_time: (1551268134)
+updated_time: (1551268149) 
+>
+, < Todo
+id: (7)
+task: ()
+completed: (False)
+user_id: (-1)
+created_time: (1551268137)
+updated_time: (1551268137) 
+>
+]}
+2019/02/27 19:49:10 http_response None
+2019/02/27 19:49:10 http_response HTTP/1.1 200 OK
+Content-Type: text/html
+
+2019/02/27 19:49:10 HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo</title>
+</head>
+<body>
+    <form action="/todo/add" method="post">
+        <input name="task">
+        <button>add todo</button>
+    </form>
+
+    
+        <div>
+            1 : 你好   @ 19:48:33
+            <a href="/todo/edit?id=1">edit</a>
+            <a href="/todo/delete?id=1">删除</a>
+        </div>
+    
+        <div>
+            2 : 我是你爸爸吧   @ 19:48:36
+            <a href="/todo/edit?id=2">edit</a>
+            <a href="/todo/delete?id=2">删除</a>
+        </div>
+    
+        <div>
+            3 : 我是你哥哥a's'd   @ 19:49:00
+            <a href="/todo/edit?id=3">edit</a>
+            <a href="/todo/delete?id=3">删除</a>
+        </div>
+    
+        <div>
+            4 : 我爱你，小仙女   @ 19:48:46
+            <a href="/todo/edit?id=4">edit</a>
+            <a href="/todo/delete?id=4">删除</a>
+        </div>
+    
+        <div>
+            5 : 么么哒a's'd'f   @ 19:49:05
+            <a href="/todo/edit?id=5">edit</a>
+            <a href="/todo/delete?id=5">删除</a>
+        </div>
+    
+        <div>
+            6 : s'da'f's'd   @ 19:49:09
+            <a href="/todo/edit?id=6">edit</a>
+            <a href="/todo/delete?id=6">删除</a>
+        </div>
+    
+        <div>
+            7 :    @ 19:48:57
+            <a href="/todo/edit?id=7">edit</a>
+            <a href="/todo/delete?id=7">删除</a>
+        </div>
+    
+</body>
+</html>
+2019/02/27 19:49:10 响应结束
+2019/02/27 19:49:15 
+
+完整请求 *******************************************************
+2019/02/27 19:49:15 
+2019/02/27 19:49:15 请求结束

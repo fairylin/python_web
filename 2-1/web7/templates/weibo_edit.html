@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修改 weibo 的页面</title>
+</head>
+<body>
+    <h1>修改 weibo</h1>
+    <form action="/weibo/update" method="post">
+        <input name="id" value="{{weibo_id}}">
+        <br>
+        <input type="text" name="content" value="{{weibo_content}}" placeholder="请输入更新weibo内容">
+        <br>
+        <button type="submit">更新</button>
+    </form>
+</body>
+</html>

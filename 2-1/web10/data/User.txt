@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "username": "root",
+    "password": "2df8e783a6bdbe85832d7e6fadabf24b",
+    "note": "123",
+    "role": 1
+  },
+  {
+    "id": 2,
+    "username": "admin",
+    "password": "f79bea30a0743a1ed3c9c992f98edad5",
+    "note": "linjiayi",
+    "role": 10
+  },
+  {
+    "id": 3,
+    "username": "gua",
+    "password": "67117f6f58a627b9de832e7c6ada2aa8",
+    "note": "",
+    "role": 10
+  },
+  {
+    "id": 4,
+    "username": "123",
+    "password": "67117f6f58a627b9de832e7c6ada2aa8",
+    "note": "asdf",
+    "role": 10
+  },
+  {
+    "id": 5,
+    "username": "weilinlin",
+    "password": "67117f6f58a627b9de832e7c6ada2aa8",
+    "note": "卫林林很帅",
+    "role": 10
+  },
+  {
+    "id": 6,
+    "username": "weill",
+    "password": "14f811e8742296b4aaffc06621a5baa6",
+    "note": "weill",
+    "role": 10
+  }
+]

@@ -1,0 +1,74 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+    <meta charset="UTF-8">
+    <title>课 10 布局练习</title>
+    <!-- 这是基础的 css 不要改动 -->
+    <style>
+        .gua-header {
+            height: 50px;
+            background: lightsteelblue;
+        }
+        .gua-header:hover {
+            color: #fff;
+            background-color: # 698ebf;
+        }
+        .gua-container {
+            width: 80%;
+            margin: 0 auto;
+            content: '';
+            display: block;
+            clearfix: both;
+        }
+        .gua-content {
+            height: 80px;
+            background: lightcoral;
+            width: 50%;
+            margin: 0 auto;
+        }
+        .gua-index {
+            height: 50px;
+            background: lightblue;
+            width: 25%;
+        }
+        .gua-detail {
+            height: 30px;
+            background: lightyellow;
+            width: 25%;
+            position: relative;
+            left: 75%;
+        }
+        .gua-footer {
+            height: 50px;
+            background: lightseagreen;
+        }
+    </style>
+    <!-- 你的 css 写在这个 style 标签里 -->
+    <style>
+
+    </style>
+ </head>
+ <body>
+    <div class="gua-page">
+        <div class="gua-header">
+            header
+        </div>
+
+        <div class="gua-container">
+            <div class="gua-index">
+                index
+            </div>
+            <div class="gua-content">
+                content
+            </div>
+            <div class="gua-detail">
+                detail
+            </div>
+        </div>
+
+        <div class="gua-footer">
+            footer
+        </div>
+    </div>
+ </body>
+ </html>

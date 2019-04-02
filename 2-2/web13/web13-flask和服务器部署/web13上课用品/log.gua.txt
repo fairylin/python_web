@@ -1,0 +1,22 @@
+2019/03/31 09:53:08 请求方法 GET
+2019/03/31 09:53:08 request, query 参数 ImmutableMultiDict([])
+2019/03/31 09:53:13 请求方法 GET
+2019/03/31 09:53:13 request, query 参数 ImmutableMultiDict([('msg', 'good')])
+2019/03/31 09:53:19 请求方法 GET
+2019/03/31 09:53:19 request, query 参数 ImmutableMultiDict([('msg', 'love you')])
+2019/03/31 09:53:24 message_add 请求方法 POST
+2019/03/31 09:53:24 request, POST 的 form 表单数据 ImmutableMultiDict([('msg_post', 'hello')])
+2019/03/31 09:53:24 请求方法 GET
+2019/03/31 09:53:24 request, query 参数 ImmutableMultiDict([])
+2019/03/31 09:53:28 message_add 请求方法 POST
+2019/03/31 09:53:28 request, POST 的 form 表单数据 ImmutableMultiDict([('msg_post', 'gua')])
+2019/03/31 09:53:28 请求方法 GET
+2019/03/31 09:53:28 request, query 参数 ImmutableMultiDict([])
+2019/03/31 09:53:33 message_add 请求方法 POST
+2019/03/31 09:53:33 request, POST 的 form 表单数据 ImmutableMultiDict([('msg_post', 'work')])
+2019/03/31 09:53:34 请求方法 GET
+2019/03/31 09:53:34 request, query 参数 ImmutableMultiDict([])
+2019/03/31 09:55:04 请求方法 GET
+2019/03/31 09:55:04 request, query 参数 ImmutableMultiDict([])
+2019/03/31 09:55:06 请求方法 GET
+2019/03/31 09:55:06 request, query 参数 ImmutableMultiDict([])

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>blog_index</title>
+</head>
+<body>
+    <a href={{ url_for('.new') }}>新增博客</a>
+    <br>
+    {% for b in blogs %}
+        <a href={{ url_for('.view', blog_id=b.id) }}>
+            {{ b.title }} from {{ b.author }} @ {{ b.time() }}
+        </a>
+        <br>
+    {% endfor %}
+</body>
+</html>
